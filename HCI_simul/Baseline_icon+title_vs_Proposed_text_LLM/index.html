@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baseline vs Proposed: text LLM</title>
+  <!-- 이 버전의 설정 (나머지 코드는 ../common 공유) -->
+  <script>
+    window.TABSIM_VERSION = {
+      id: 'text_llm',
+      prefix: 'llm',
+      proposedName: 'text LLM',
+      source: 'llm',           // cloud = 본문 빈도 Top-1 | llm = 엑셀 LLM_text_k | title_llm = 엑셀 title_text_LLM_k
+    };
+  </script>
+  <link rel="stylesheet" href="../common/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<!-- ───────────── 참가자에게 보이는 브라우저 화면 ───────────── -->
+<div id="stage">
+  <div id="browser" class="browser">
+    <div class="tabstrip">
+      <div class="strip-btn tabsearch" aria-hidden="true">
+        <svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <div class="tabs-area" id="tabsArea">
+        <div class="tabs" id="tabs" role="tablist"></div>
+        <div class="strip-btn newtab" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="16" height="16"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+      </div>
+      <div class="caption" aria-hidden="true">
+        <span><svg viewBox="0 0 10 10" width="10" height="10"><path d="M0 5h10" stroke="currentColor"/></svg></span>
+        <span><svg viewBox="0 0 10 10" width="10" height="10"><rect x=".5" y=".5" width="9" height="9" fill="none" stroke="currentColor"/></svg></span>
+        <span><svg viewBox="0 0 10 10" width="10" height="10"><path d="M0 0l10 10M10 0L0 10" stroke="currentColor"/></svg></span>
+      </div>
+    </div>
+
+    <div class="tab-scroll-wrap"><div class="tab-scroll" id="tabScroll" hidden><div class="tab-scroll-thumb" id="tabScrollThumb"></div></div></div>
+    <div class="toolbar" id="toolbar">
+      <div class="nav" aria-hidden="true">
+        <span><svg viewBox="0 0 16 16" width="16" height="16"><path d="M13 8H3m4-4L3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <span class="dim"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M3 8h10m-4-4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <span><svg viewBox="0 0 16 16" width="16" height="16"><path d="M13 8a5 5 0 1 1-1.5-3.6M13 2v3h-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </div>
+      <div class="omnibox" id="omnibox">
+        <span class="chip">파일</span>
+        <span class="url" id="url"></span>
+      </div>
+      <div class="nav" aria-hidden="true">
+        <span><svg viewBox="0 0 16 16" width="16" height="16"><circle cx="8" cy="3" r="1.3"/><circle cx="8" cy="8" r="1.3"/><circle cx="8" cy="13" r="1.3"/></svg></span>
+      </div>
+    </div>
+
+    <div class="viewport" id="viewport">
+      <div class="loading" id="loadingMsg" hidden>불러오는 중…</div>
+    </div>
+  </div>
+</div>
+
+<div id="hovercard" class="hovercard" hidden>
+  <div class="hc-title" id="hcTitle"></div>
+</div>
+
+<!-- ───────────── 과제박스 (우측 하단) ───────────── -->
+<div id="taskbox" class="taskbox">
+  <div class="tb-no" id="tbNo"></div>
+  <div class="tb-text" id="tbText"></div>
+  <canvas id="tbThumb" class="tb-thumb" hidden></canvas>
+  <div class="tb-row">
+    <div class="tb-clock" id="tbClock">60</div>
+    <button id="btnStart" class="tbtn start" disabled>Start</button>
+    <button id="btnMissing" class="tbtn missing" disabled title="찾을 수 없음 (포기)">Missing</button>
+  </div>
+  <div class="tb-admin-row">
+    <span id="tbAdmin" class="tb-admin" hidden>ADMIN</span>
+    <button id="btnAdminNext" class="tbtn admin" hidden>⏭ 넥스트 스텝</button>
+  </div>
+</div>
+
+<!-- ───────────── 시행 사이 화면 (전체 흐림) ───────────── -->
+<div id="between" class="between" hidden>
+  <div class="between-card">
+    <div class="b-sub" id="bSub"></div>
+    <div class="b-count" id="bCount"></div>
+    <div class="b-note" id="bNote"></div>
+    <button id="btnNext" class="tbtn start big">Start</button>
+  </div>
+</div>
+
+<button id="btnSetup" class="setup-toggle" title="실험 설정 (Ctrl+Shift+S)">⚙</button>
+
+<!-- ───────────── 실험 설계자 설정 패널 ───────────── -->
+<div id="setup" class="setup" hidden>
+  <div class="setup-inner">
+    <header class="setup-head">
+      <div>
+        <h1 id="versionTitle"></h1>
+        <p class="muted">IV1 = 라벨 방식 (Baseline / Proposed) · IV2 = 탭 폭 (narrow / middle / wide). 이 패널은 참가자에게 보이지 않도록 실험 전 닫아 주세요.</p>
+      </div>
+      <div class="head-actions">
+        <button id="btnResetCfg" class="danger" title="모든 설정을 기본값으로 (기록·PDF 폴더는 유지)">↺ 모든 설정 기본으로</button>
+        <button id="btnCloseSetup" class="primary">실험 화면으로 ▶</button>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. 참가자 · 세션</h2>
+      <div class="grid">
+        <label>참가자 ID (숫자 포함, 예: P03)
+          <input id="cfgPid" type="text">
+        </label>
+        <div class="info" id="pidInfo"></div>
+        <label class="check"><input id="cfgAdmin" type="checkbox"> <b>관리자 모드</b> — 과제박스에 넥스트 스텝 버튼 (탭 확인 완료 / 정답 처리 / 다음 아티클)</label>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>블록</th><th>조건</th><th>방식</th><th>탭 폭</th><th>완료</th></tr></thead>
+          <tbody id="planRows"></tbody>
+        </table>
+      </div>
+      <div class="row-actions">
+        <button id="btnResetPid" class="small danger">이 참가자 기록 삭제 (읽기 단계부터 다시)</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. PDF 폴더</h2>
+      <div class="row-actions">
+        <button id="btnPickDir" class="primary">📁 폴더 선택</button>
+        <button id="btnReconnect" hidden>🔗 이전 폴더 다시 연결</button>
+        <button id="btnRescan">다시 스캔</button>
+        <input id="dirInput" type="file" webkitdirectory multiple hidden>
+        <button id="btnPickXlsx">📊 엑셀(아티클 정보) 선택</button>
+        <input id="xlsxInput" type="file" accept=".xlsx,.xls" hidden>
+      </div>
+      <div class="info" id="folderStatus">폴더가 선택되지 않았습니다.</div>
+      <div class="info" id="metaStatus">엑셀이 연결되지 않았습니다.</div>
+      <div id="progress" class="progress" hidden></div>
+      <p class="muted small">폴더 바로 아래의 <code>*.pdf</code>를 모두 읽습니다. 엑셀(<code>PDF 파일명</code>, <code>Article Title</code>, <code>description_1~10</code>, <code>LLM_text_1~5</code>, <code>title_text_LLM_1~3</code> 열)은 폴더 안에 있으면 자동으로 읽고, 다른 곳에 있으면 "엑셀 선택"으로 고르세요 (한 번 고르면 기억). 같은 폴더에 <code>cues.csv</code>(열: <code>filename,cue</code>)가 있으면 과제 단서로, <code>baseline_icon.png</code>(또는 .ico/.svg)가 있으면 Baseline 아이콘으로 사용합니다 (없으면 기본 arXiv 풍 아이콘). 텍스트 추출 결과는 캐시되어 두 번째부터는 빠릅니다.</p>
+      <div class="table-wrap tall">
+        <table class="docs">
+          <thead><tr><th>#</th><th>파일</th><th>쪽</th><th>Baseline 라벨</th><th id="thSource">Top-5 단어 (빈도)</th><th>Proposed 라벨</th><th>수동 라벨</th><th>description</th></tr></thead>
+          <tbody id="docRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. 실험 설계</h2>
+      <div class="grid">
+        <label>Baseline 라벨 (arXiv 아이콘 + …)
+          <select id="cfgBaseline">
+            <option value="title">제목 — 엑셀 Article Title (없으면 첫 페이지 추정) (기본)</option>
+            <option value="doi">DOI — 랜덤 arXiv ID (예: 2403.17219v1)</option>
+          </select>
+        </label>
+        <label>랜덤 DOI 생성 상수 (6~10자리, 끝자리 0이 아닌 복잡한 수)
+          <input id="cfgDoiConst" type="number" min="100000" max="9999999999">
+        </label>
+        <label>Proposed 라벨 (아이콘 없음)
+          <input id="propDesc" type="text" value="" disabled>
+        </label>
+        <label class="check"><input id="cfgNumber" type="checkbox"> Proposed 라벨 앞에 탭 위치 숫자 0~9 (6rain) + 10개 단위 흰색/회색 탭</label>
+        <label id="wrapRank" hidden>Proposed 라벨에 쓸 순위 (탭 폭과 무관)
+          <select id="cfgRank"></select>
+        </label>
+        <label>과제 단서 (Start 후 과제박스에 표시)
+          <select id="cfgCue">
+            <option value="desc">엑셀 description (랜덤, 참가자 안에서 아티클별 중복 없음) (기본)</option>
+            <option value="auto">cues.csv 우선, 없으면 논문 제목</option>
+            <option value="title">논문 제목</option>
+            <option value="thumb">첫 페이지 미리보기 이미지</option>
+            <option value="none">표시 안 함 (진행자가 구두 안내)</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid">
+        <label>Narrow 탭 폭 (px)<input id="cfgWN" type="number" min="20" max="400"></label>
+        <label>Middle 탭 폭 (px)<input id="cfgWM" type="number" min="20" max="400"></label>
+        <label>Wide 탭 폭 (px)<input id="cfgWW" type="number" min="20" max="400"></label>
+      </div>
+      <div class="info" id="widthInfo"></div>
+      <div class="grid">
+        <label>아티클(탭) 수 — 파일명 순 앞에서부터
+          <select id="cfgPool">
+            <option value="10">10개</option>
+            <option value="20">20개</option>
+            <option value="30">30개</option>
+          </select>
+        </label>
+        <label>조건당 시행 수 N (정답이 균등해지는 값만)
+          <select id="cfgTPC"></select>
+        </label>
+        <label>시행당 열리는 탭 수 (≤ 아티클 수)<input id="cfgTPT" type="number" min="2" max="30"></label>
+        <label>제한 시간 (초)<input id="cfgLimit" type="number" min="5" max="600"></label>
+        <label>PDF 배정 시드<input id="cfgSeed" type="number" min="1"></label>
+        <label class="check"><input id="cfgLatin" type="checkbox"> Latin square로 조건 순서 counterbalancing</label>
+      </div>
+      <div class="grid">
+        <label class="check"><input id="cfgRead" type="checkbox"> 세션 시작 시 읽기 단계 (모든 PDF를 하나씩)</label>
+        <label>아티클당 최소 읽기 시간 (초)<input id="cfgReadMin" type="number" min="0" max="600"></label>
+        <label>읽기 순서
+          <select id="cfgReadOrder">
+            <option value="random">참가자마다 랜덤</option>
+            <option value="name">파일명 순 (모두 동일)</option>
+          </select>
+        </label>
+      </div>
+      <div class="info" id="needInfo"></div>
+      <div class="grid">
+        <label>주소창
+          <select id="cfgAddr">
+            <option value="path">arXiv 주소 (arxiv.org/pdf/랜덤 ID, 모든 조건 동일)</option>
+            <option value="blank">빈 주소창</option>
+            <option value="none">주소창 숨김</option>
+          </select>
+        </label>
+        <label>탭 호버 카드
+          <select id="cfgHover">
+            <option value="label">라벨 표시 (Chrome과 동일)</option>
+            <option value="off">표시 안 함</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section id="secKeywords">
+      <h2>4. Proposed(text cloud) 키워드 추출 규칙</h2>
+      <div class="grid">
+        <label>최소 단어 길이<input id="cfgMinLen" type="number" min="1" max="10"></label>
+        <label>라벨 표기
+          <select id="cfgCase">
+            <option value="capitalize">Capitalize (Diffusion)</option>
+            <option value="lower">소문자 (diffusion)</option>
+            <option value="upper">대문자 (DIFFUSION)</option>
+          </select>
+        </label>
+        <label class="check"><input id="cfgRefs" type="checkbox"> References 이후 제외</label>
+        <label class="check"><input id="cfgPlural" type="checkbox"> 복수형 합치기 (models → model)</label>
+      </div>
+      <label class="block">추가 불용어 (영어 기본 불용어 외에 제외할 단어, 공백/쉼표 구분)
+        <textarea id="cfgStop" rows="4"></textarea>
+      </label>
+      <button id="btnResetStop" class="small">추가 불용어 기본값으로</button>
+    </section>
+
+    <section>
+      <h2>5. 측정 기록 <span class="muted" id="logCount"></span></h2>
+      <div class="row-actions">
+        <button id="btnCsv" class="small primary">시행 기록 CSV</button>
+        <button id="btnReadCsv" class="small">읽기 기록 CSV</button>
+        <button id="btnClearLogs" class="small danger">기록 전체 삭제</button>
+      </div>
+      <div class="table-wrap tall">
+        <table class="logs">
+          <thead><tr><th>참가자</th><th>#</th><th>블록</th><th>조건</th><th>시행</th><th class="num">Success</th><th class="num">Elapsed Time</th><th class="num">Successful Completion Time</th><th class="num">Errors</th><th>결과</th><th></th></tr></thead>
+          <tbody id="logRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="../common/app.js"></script>
+</body>
+</html>

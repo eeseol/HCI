@@ -1,0 +1,15 @@
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python temporary files and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Office temporary lock files
+~$*
