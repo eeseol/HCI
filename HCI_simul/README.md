@@ -9,7 +9,7 @@
 | 폴더 | Proposed 라벨 (아이콘 없이 텍스트만) |
 |---|---|
 | `Baseline_icon+title_vs_Proposed_text_cloud/` | PDF 본문에서 가장 많이 나온 단어 (빈도 Top-1) |
-| `Baseline_icon+title_vs_Proposed_text_LLM/` | 엑셀 `LLM_text_1` — LLM이 본문에서 뽑은 의미 단어, 중요도 1순위 |
+| `Baseline_icon+title_vs_Proposed_text_LLM/` | 엑셀 `LLM_text_1 · 2 · 3` 이어 표시 (v3 엑셀) |
 | `Baseline_icon+title_vs_Proposed_text_title_LLM/` | 엑셀 `title_text_LLM_1` — LLM이 제목에서 뽑은 중요 단어, 1순위 |
 
 - 엑셀 버전 두 개는 탭 폭과 관계없이 1순위 단어를 씁니다. 설정 → 3에서 다른 순위로 바꿀 수 있습니다.
