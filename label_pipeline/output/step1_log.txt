@@ -1,0 +1,558 @@
+01 An Honestly Fun Camp: questions_cut=False, title_removed=True, chars=2230
+02 Emma's Favorite Restaurant: questions_cut=False, title_removed=True, chars=2869
+03 First Day: questions_cut=False, title_removed=True, chars=2677
+04 Left Out: questions_cut=False, title_removed=True, chars=2794
+05 Open for Business: questions_cut=False, title_removed=True, chars=2801
+06 Oranges Everywhere: questions_cut=False, title_removed=True, chars=2438
+07 Pool Fit for a Hedgehog: questions_cut=False, title_removed=True, chars=2055
+08 Mouse Madness: questions_cut=False, title_removed=True, chars=2726
+09 Treasure Hunt: questions_cut=False, title_removed=True, chars=3197
+10 The Singing Plants: questions_cut=False, title_removed=True, chars=2757
+11 Ballet: questions_cut=False, title_removed=True, chars=2642
+12 Curious about Careers - Firefighters: questions_cut=False, title_removed=True, chars=3522
+13 How to Skateboard: questions_cut=False, title_removed=True, chars=3246
+14 Survival in the Wild: questions_cut=False, title_removed=True, chars=2085
+15 After the Flood: questions_cut=False, title_removed=True, chars=3692
+16 Alex and Amanda's First Concert: questions_cut=False, title_removed=True, chars=4426
+17 Best Friend Blues: questions_cut=False, title_removed=True, chars=3190
+18 Bring Your Pet Day Disaster: questions_cut=False, title_removed=True, chars=2702
+19 Dinner Disaster: questions_cut=False, title_removed=True, chars=4728
+20 Fairy Followers: questions_cut=False, title_removed=True, chars=3985
+21 The Goose Voyage: questions_cut=False, title_removed=True, chars=3462
+22 Jump Around: questions_cut=False, title_removed=True, chars=2618
+23 Mystery of the Broken Pie: questions_cut=False, title_removed=True, chars=4404
+24 The Best Vacation Ever: questions_cut=False, title_removed=True, chars=3164
+25 Finders Keepers: questions_cut=False, title_removed=True, chars=4000
+26 Curious about Careers - Teacher: questions_cut=False, title_removed=True, chars=3084
+27 Horses: questions_cut=False, title_removed=True, chars=2278
+28 How to Care for a Pet Fish: questions_cut=False, title_removed=True, chars=3060
+29 How to Make Animations: questions_cut=False, title_removed=True, chars=3027
+30 What Police and Detectives Do: questions_cut=False, title_removed=True, chars=4892
+
+split-word repairs (131):
+  'hel p' x2
+  'ha ve' x2
+  'tha t' x2
+  't he' x2
+  'sa id' x1
+  'bett er' x1
+  'wan t' x1
+  'commun ity' x1
+  'crea m' x1
+  's tart' x1
+  'Zi on' x1
+  'de licious' x1
+  'thinkin g' x1
+  'woul d' x1
+  'c ompany' x1
+  'loo ked' x1
+  'reco mmendation' x1
+  'he r' x1
+  'C ora' x1
+  'o f' x1
+  'H is' x1
+  'b enches' x1
+  'trea sure' x1
+  'ta ke' x1
+  'par k' x1
+  'clue s' x1
+  'sta rted' x1
+  'tel l' x1
+  'be lieve' x1
+  'te achers' x1
+  'T hey' x1
+  'Man y' x1
+  'd inner' x1
+  'Firefighte rs' x1
+  'ca n' x1
+  'jack s' x1
+  'l ike' x1
+  'parki ng' x1
+  'm ovements' x1
+  'practic e' x1
+  'Y ou' x1
+  'pro bably' x1
+  'you r' x1
+  'thei r' x1
+  'b lend' x1
+  'bri dge' x1
+  'f ixing' x1
+  'basemen t' x1
+  'schoo l' x1
+  't ogether' x1
+  'tak e' x1
+  'Brit tany' x1
+  'i nternal' x1
+  'real ized' x1
+  'curiousl y' x1
+  'Fi nally' x1
+  'slowl y' x1
+  'per ched' x1
+  'w ere' x1
+  'b us' x1
+  'fu nny' x1
+  'ev ery' x1
+  'c ontinued' x1
+  'chi cken' x1
+  's ide' x1
+  'so meone' x1
+  'Mat t' x1
+  'h is' x1
+  'guy s' x1
+  'd rawings' x1
+  'Awesom e' x1
+  'corre ctly' x1
+  'littl e' x1
+  'T ony' x1
+  'smalles t' x1
+  'h as' x1
+  'li ke' x1
+  'w hy' x1
+  'G reg' x1
+  'abo ut' x1
+  'a nother' x1
+  's ure' x1
+  'tra mpoline' x1
+  'an d' x1
+  'everyo ne' x1
+  'o utside' x1
+  'bird s' x1
+  'hea rd' x1
+  'gue ss' x1
+  'differen t' x1
+  'che ck' x1
+  'w as' x1
+  'twiste d' x1
+  'holdi ng' x1
+  'dinne r' x1
+  'u pset' x1
+  'num ber' x1
+  'happene d' x1
+  'ov er' x1
+  'yo u' x1
+  'o ther' x1
+  'hom e' x1
+  'experi ments' x1
+  'teachin g' x1
+  'c ountry' x1
+  'r elax' x1
+  'st aff' x1
+  'a lso' x1
+  'e yes' x1
+  'i s' x1
+  'Freshwate r' x1
+  'Nex t' x1
+  'wat er' x1
+  'engin eer' x1
+  'loo k' x1
+  'a s' x1
+  'arti st' x1
+  'perf orm' x1
+  'searche s' x1
+  'departm ents' x1
+  'e nforcement' x1
+  'troo pers' x1
+  'Sta tes' x1
+  'stat e' x1
+  'det ailed' x1
+  'agenci es' x1
+  'pub lic' x1
+
+proper nouns excluded (60):
+  aiden, alex, alexa, allison, amanda, andrea, august, bentley, brittany, cora, daniel, danny, emma, english, fred, french, gerald, greg, heather, hi, internet, jamie, janie, jax, jay, josh, josie, kate, labor, lucy, marty, matt, maxie, mike, misty, monday, mr, nicky, ok, renee, richardson, saturday, scott, september, shane, sophia, stone, susie, swat, sydney, thai, thump, todd, tony, trish, united, v, vicky, warner, zion
+
+lemmatizations (394 types):
+  accommodations -> accommodation x1
+  activities -> activity x4
+  actors -> actor x2
+  adults -> adult x1
+  adventures -> adventure x1
+  agencies -> agency x7
+  agents -> agent x2
+  ambulances -> ambulance x1
+  amounts -> amount x1
+  animals -> animal x21
+  animations -> animation x5
+  answers -> answer x1
+  apples -> apple x1
+  approaches -> approach x1
+  aquariums -> aquarium x1
+  areas -> area x3
+  arguments -> argument x1
+  arrests -> arrest x1
+  artichokes -> artichoke x2
+  artists -> artist x10
+  aspects -> aspect x1
+  axes -> ax x1
+  backs -> back x2
+  bags -> bag x2
+  bailiffs -> bailiff x1
+  basics -> basic x1
+  bees -> bee x2
+  benches -> bench x1
+  bikes -> bike x5
+  birds -> bird x5
+  bites -> bite x3
+  bodies -> body x9
+  books -> book x5
+  boots -> boot x1
+  boys -> boy x1
+  branches -> branch x1
+  breaks -> break x2
+  brochures -> brochure x1
+  buddies -> buddy x1
+  bumps -> bump x1
+  bushes -> bush x2
+  businesses -> business x1
+  butterflies -> butterfly x1
+  cages -> cage x2
+  calls -> call x3
+  careers -> career x1
+  caretakers -> caretaker x1
+  carriages -> carriage x1
+  carrots -> carrot x1
+  cars -> car x1
+  cartoons -> cartoon x3
+  cases -> case x5
+  chameleons -> chameleon x1
+  characters -> character x9
+  chinchillas -> chinchilla x1
+  choreographers -> choreographer x1
+  citations -> citation x2
+  classes -> class x5
+  classmates -> classmate x1
+  claws -> claw x1
+  clues -> clue x2
+  coaches -> coach x1
+  colleagues -> colleague x1
+  colors -> color x3
+  companies -> company x3
+  companions -> companion x1
+  complaints -> complaint x2
+  computers -> computer x1
+  concerts -> concert x1
+  conditions -> condition x4
+  corps -> corp x1
+  costs -> cost x2
+  counselors -> counselor x1
+  courts -> court x2
+  crafts -> craft x1
+  crashes -> crash x1
+  creatures -> creature x4
+  crimes -> crime x2
+  criminals -> criminal x1
+  custodians -> custodian x1
+  customers -> customer x1
+  dancers -> dancer x15
+  dances -> dance x1
+  days -> day x8
+  decorations -> decoration x5
+  departments -> department x5
+  deputies -> deputy x1
+  desks -> desk x1
+  detectives -> detective x9
+  dinners -> dinner x2
+  directions -> direction x2
+  disabilities -> disability x1
+  dishes -> dish x2
+  districts -> district x1
+  dogs -> dog x2
+  dollars -> dollar x4
+  doors -> door x2
+  drawings -> drawing x12
+  drums -> drum x1
+  dumplings -> dumpling x1
+  duties -> duty x6
+  earmuffs -> earmuff x1
+  effects -> effect x2
+  elements -> element x1
+  employees -> employee x1
+  engines -> engine x1
+  evenings -> evening x1
+  examples -> example x2
+  experiments -> experiment x1
+  exterminators -> exterminator x1
+  extinguishers -> extinguisher x1
+  eyes -> eye x5
+  factories -> factory x1
+  facts -> fact x3
+  fairies -> fairy x8
+  families -> family x1
+  fans -> fan x1
+  farmers -> farmer x1
+  feedings -> feeding x1
+  feet -> foot x4
+  fields -> field x1
+  finders -> finder x1
+  fingernails -> fingernail x1
+  firefighters -> firefighter x17
+  fires -> fire x4
+  flights -> flight x1
+  flowers -> flower x5
+  foals -> foal x1
+  foods -> food x3
+  footprints -> footprint x2
+  forces -> force x1
+  forms -> form x2
+  friends -> friend x21
+  games -> game x6
+  girls -> girl x3
+  goodies -> goody x1
+  goods -> good x1
+  graders -> grader x2
+  groceries -> grocery x2
+  groups -> group x1
+  groves -> grove x1
+  guards -> guard x1
+  guests -> guest x1
+  guns -> gun x1
+  guys -> guy x1
+  hallways -> hallway x2
+  handcuffs -> handcuff x1
+  hands -> hand x1
+  heads -> head x2
+  hearts -> heart x1
+  hedgehogs -> hedgehog x3
+  helmets -> helmet x1
+  herbivores -> herbivore x1
+  hikers -> hiker x2
+  holdings -> holding x1
+  holes -> hole x1
+  homes -> home x1
+  hooves -> hoof x3
+  horses -> horse x19
+  horseshoes -> horseshoe x3
+  hoses -> hose x1
+  hours -> hour x5
+  houseplants -> houseplant x1
+  houses -> house x5
+  hydrants -> hydrant x1
+  ideas -> idea x6
+  images -> image x3
+  inches -> inch x1
+  individuals -> individual x1
+  ingredients -> ingredient x6
+  insects -> insect x2
+  instructions -> instruction x2
+  interviews -> interview x2
+  inventions -> invention x1
+  investigators -> investigator x4
+  items -> item x2
+  jackets -> jacket x1
+  jacks -> jack x1
+  jails -> jail x1
+  jaws -> jaw x1
+  jobs -> job x2
+  jurisdictions -> jurisdiction x1
+  keepers -> keeper x1
+  kids -> kid x15
+  knees -> knee x1
+  ladders -> ladder x1
+  lawns -> lawn x1
+  laws -> law x3
+  leaps -> leap x1
+  leashes -> leash x1
+  leaves -> leaf x3
+  legs -> leg x3
+  lessons -> lesson x4
+  levels -> level x1
+  lights -> light x2
+  likes -> like x1
+  lines -> line x2
+  lives -> life x1
+  looks -> look x1
+  lots -> lot x1
+  mammals -> mammal x2
+  maps -> map x2
+  markings -> marking x1
+  masks -> mask x1
+  materials -> material x1
+  meals -> meal x4
+  meatballs -> meatball x4
+  members -> member x4
+  memories -> memory x1
+  messes -> mess x2
+  meteorologists -> meteorologist x1
+  miles -> mile x1
+  minds -> mind x2
+  minutes -> minute x3
+  months -> month x1
+  mornings -> morning x1
+  moths -> moth x1
+  mouths -> mouth x1
+  movements -> movement x10
+  moves -> move x1
+  movies -> movie x1
+  muscles -> muscle x4
+  mysteries -> mystery x1
+  nachos -> nacho x3
+  nails -> nail x1
+  names -> name x4
+  narcotics -> narcotic x1
+  necks -> neck x1
+  neighbors -> neighbor x2
+  nights -> night x1
+  noises -> noise x1
+  notebooks -> notebook x1
+  novels -> novel x1
+  oats -> oat x1
+  objects -> object x4
+  officers -> officer x20
+  ones -> one x1
+  oranges -> orange x10
+  outbursts -> outburst x1
+  owls -> owl x1
+  pads -> pad x2
+  pages -> page x1
+  pairs -> pair x1
+  pants -> pant x1
+  papers -> paper x1
+  paramedics -> paramedic x2
+  parents -> parent x24
+  parks -> park x1
+  parts -> part x3
+  passengers -> passenger x1
+  patrols -> patrol x2
+  paychecks -> paycheck x1
+  peas -> pea x1
+  petals -> petal x1
+  pets -> pet x7
+  pictures -> picture x7
+  pieces -> piece x2
+  pies -> pie x2
+  places -> place x6
+  plans -> plan x1
+  plants -> plant x22
+  plows -> plow x1
+  pools -> pool x4
+  porcupines -> porcupine x1
+  positions -> position x1
+  possibilities -> possibility x1
+  predators -> predator x4
+  prices -> price x1
+  principals -> principal x1
+  problems -> problem x3
+  prods -> prod x1
+  products -> product x2
+  projects -> project x2
+  purposes -> purpose x1
+  pushes -> push x1
+  questions -> question x5
+  quills -> quill x1
+  rabbits -> rabbit x3
+  radios -> radio x1
+  raids -> raid x1
+  reactions -> reaction x1
+  recipes -> recipe x1
+  records -> record x2
+  regulars -> regular x1
+  relatives -> relative x1
+  rents -> rent x1
+  replies -> reply x2
+  reports -> report x3
+  responsibilities -> responsibility x2
+  restaurants -> restaurant x1
+  reviews -> review x2
+  roads -> road x2
+  rooms -> room x1
+  routines -> routine x1
+  rules -> rule x6
+  runners -> runner x2
+  sandbags -> sandbag x1
+  scales -> scale x1
+  scenes -> scene x1
+  schools -> school x3
+  scores -> score x1
+  searches -> search x1
+  seats -> seat x2
+  seconds -> second x2
+  secretaries -> secretary x1
+  sentences -> sentence x1
+  sequences -> sequence x1
+  services -> service x1
+  servings -> serving x2
+  shapes -> shape x2
+  sheets -> sheet x2
+  sheriffs -> sheriff x4
+  shoes -> shoe x2
+  shops -> shop x1
+  shorts -> short x1
+  shows -> show x2
+  siblings -> sibling x1
+  sides -> side x1
+  sidewalks -> sidewalk x1
+  signs -> sign x3
+  sis -> si x1
+  sisters -> sister x2
+  situations -> situation x1
+  sizes -> size x1
+  skateboarders -> skateboarder x2
+  skateboards -> skateboard x1
+  sketches -> sketch x1
+  smells -> smell x1
+  snakes -> snake x2
+  songs -> song x2
+  sounds -> sound x1
+  spikes -> spike x1
+  spines -> spine x1
+  stairs -> stair x3
+  stars -> star x1
+  steps -> step x4
+  stomachs -> stomach x2
+  stops -> stop x1
+  stories -> story x4
+  structures -> structure x1
+  students -> student x13
+  suits -> suit x2
+  summers -> summer x1
+  supplies -> supply x4
+  suspects -> suspect x5
+  tactics -> tactic x2
+  talons -> talon x1
+  tanks -> tank x3
+  tastes -> taste x1
+  teachers -> teacher x20
+  teams -> team x1
+  techniques -> technique x2
+  tests -> test x5
+  things -> thing x13
+  thorns -> thorn x1
+  thoughts -> thought x1
+  tickets -> ticket x2
+  times -> time x4
+  tips -> tip x1
+  toes -> toe x1
+  tools -> tool x6
+  topics -> topic x2
+  towns -> town x2
+  toys -> toy x6
+  trails -> trail x1
+  trees -> tree x9
+  tricks -> trick x4
+  troopers -> trooper x1
+  trucks -> truck x2
+  trunks -> trunk x1
+  turns -> turn x2
+  types -> type x8
+  uniforms -> uniform x1
+  units -> unit x4
+  values -> value x4
+  vehicles -> vehicle x1
+  victims -> victim x1
+  voices -> voice x7
+  warrants -> warrant x2
+  waves -> wave x3
+  ways -> way x6
+  weapons -> weapon x2
+  websites -> website x1
+  weeks -> week x3
+  windows -> window x1
+  wings -> wing x2
+  witnesses -> witness x1
+  women -> woman x1
+  words -> word x2
+  workers -> worker x3
+  worksheets -> worksheet x1
+  workshops -> workshop x1
+  writers -> writer x1
+  years -> year x8

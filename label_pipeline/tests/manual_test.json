@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "model": "manual-test-fixture",
+    "generation_note": "2단계 동작 확인용 테스트 픽스처 (최종 라벨 아님). 01/12/21은 정상 예시, 04/30은 검증 실패를 확인하기 위한 의도적 오류 예시.",
+    "created": "2026-11-10"
+  },
+  "results": {
+    "1":  {"keywords": ["camp", "canoeing", "counselor"]},
+    "12": {"keywords": ["firefighter", "equipment", "emergency"]},
+    "21": "{\"keywords\": [\"migration\", \"flock\", \"eagle\"]}",
+    "4":  {"keywords": ["trish", "basketball", "friend"]},
+    "30": {"keywords": ["police", "detective"]}
+  }
+}

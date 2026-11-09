@@ -1,0 +1,601 @@
+doc_id,title,rank,word,tfidf
+1,An Honestly Fun Camp,1,camp,0.5755
+1,An Honestly Fun Camp,2,counselor,0.4316
+1,An Honestly Fun Camp,3,baseball,0.2877
+1,An Honestly Fun Camp,4,mom,0.2249
+1,An Honestly Fun Camp,5,canoeing,0.2158
+1,An Honestly Fun Camp,6,dad,0.2151
+1,An Honestly Fun Camp,7,horse,0.1924
+1,An Honestly Fun Camp,8,meal,0.1629
+1,An Honestly Fun Camp,9,week,0.1566
+1,An Honestly Fun Camp,10,canoe,0.1439
+1,An Honestly Fun Camp,11,stern,0.1439
+1,An Honestly Fun Camp,12,horseback,0.1283
+1,An Honestly Fun Camp,13,summer,0.1016
+1,An Honestly Fun Camp,14,year,0.0820
+1,An Honestly Fun Camp,15,food,0.0750
+1,An Honestly Fun Camp,16,base,0.0719
+1,An Honestly Fun Camp,17,bow,0.0719
+1,An Honestly Fun Camp,18,catcher,0.0719
+1,An Honestly Fun Camp,19,letter,0.0719
+1,An Honestly Fun Camp,20,lousy,0.0719
+2,Emma's Favorite Restaurant,1,restaurant,0.7174
+2,Emma's Favorite Restaurant,2,meatball,0.2874
+2,Emma's Favorite Restaurant,3,favorite,0.1965
+2,Emma's Favorite Restaurant,4,lebanese,0.1724
+2,Emma's Favorite Restaurant,5,sauce,0.1724
+2,Emma's Favorite Restaurant,6,new,0.1251
+2,Emma's Favorite Restaurant,7,host,0.1149
+2,Emma's Favorite Restaurant,8,italian,0.1149
+2,Emma's Favorite Restaurant,9,kibbeh,0.1149
+2,Emma's Favorite Restaurant,10,lamb,0.1149
+2,Emma's Favorite Restaurant,11,manti,0.1149
+2,Emma's Favorite Restaurant,12,pizza,0.1149
+2,Emma's Favorite Restaurant,13,ravioli,0.1149
+2,Emma's Favorite Restaurant,14,server,0.1149
+2,Emma's Favorite Restaurant,15,dish,0.1025
+2,Emma's Favorite Restaurant,16,spaghetti,0.1025
+2,Emma's Favorite Restaurant,17,week,0.0938
+2,Emma's Favorite Restaurant,18,bite,0.0936
+2,Emma's Favorite Restaurant,19,meal,0.0868
+2,Emma's Favorite Restaurant,20,similar,0.0868
+3,First Day,1,value,0.3996
+3,First Day,2,new,0.3480
+3,First Day,3,teacher,0.3017
+3,First Day,4,classroom,0.2850
+3,First Day,5,group,0.2137
+3,First Day,6,partner,0.2137
+3,First Day,7,line,0.1953
+3,First Day,8,class,0.1693
+3,First Day,9,fairness,0.1598
+3,First Day,10,fourth,0.1598
+3,First Day,11,respect,0.1598
+3,First Day,12,nice,0.1595
+3,First Day,13,sign,0.1425
+3,First Day,14,student,0.1425
+3,First Day,15,hand,0.1129
+3,First Day,16,summer,0.1129
+3,First Day,17,lot,0.0989
+3,First Day,18,year,0.0911
+3,First Day,19,idea,0.0870
+3,First Day,20,carpet,0.0799
+4,Left Out,1,door,0.3369
+4,Left Out,2,wrong,0.3212
+4,Left Out,3,friend,0.3050
+4,Left Out,4,mom,0.2789
+4,Left Out,5,problem,0.2268
+4,Left Out,6,basketball,0.2141
+4,Left Out,7,car,0.2021
+4,Left Out,8,choice,0.1909
+4,Left Out,9,snake,0.1909
+4,Left Out,10,mad,0.1744
+4,Left Out,11,sorry,0.1744
+4,Left Out,12,room,0.1512
+4,Left Out,13,good,0.1325
+4,Left Out,14,school,0.1220
+4,Left Out,15,right,0.1116
+4,Left Out,16,convinced,0.1071
+4,Left Out,17,earmuff,0.1071
+4,Left Out,18,goodbye,0.1071
+4,Left Out,19,knock,0.1071
+4,Left Out,20,pillow,0.1071
+5,Open for Business,1,business,0.5392
+5,Open for Business,2,cream,0.3774
+5,Open for Business,3,ice,0.3774
+5,Open for Business,4,money,0.3417
+5,Open for Business,5,math,0.2157
+5,Open for Business,6,cost,0.1814
+5,Open for Business,7,lot,0.1497
+5,Open for Business,8,ingredient,0.1478
+5,Open for Business,9,mom,0.1260
+5,Open for Business,10,leader,0.1209
+5,Open for Business,11,serving,0.1209
+5,Open for Business,12,worker,0.1078
+5,Open for Business,13,people,0.1035
+5,Open for Business,14,shop,0.0913
+5,Open for Business,15,thing,0.0837
+5,Open for Business,16,day,0.0674
+5,Open for Business,17,able,0.0630
+5,Open for Business,18,hard,0.0630
+5,Open for Business,19,awful,0.0605
+5,Open for Business,20,customer,0.0605
+6,Oranges Everywhere,1,orange,0.7498
+6,Oranges Everywhere,2,dip,0.2249
+6,Oranges Everywhere,3,food,0.1953
+6,Oranges Everywhere,4,ingredient,0.1833
+6,Oranges Everywhere,5,toy,0.1698
+6,Oranges Everywhere,6,world,0.1698
+6,Oranges Everywhere,7,artichoke,0.1500
+6,Oranges Everywhere,8,family,0.1496
+6,Oranges Everywhere,9,people,0.1283
+6,Oranges Everywhere,10,favorite,0.1282
+6,Oranges Everywhere,11,weather,0.1132
+6,Oranges Everywhere,12,time,0.1114
+6,Oranges Everywhere,13,place,0.0897
+6,Oranges Everywhere,14,kid,0.0854
+6,Oranges Everywhere,15,mom,0.0781
+6,Oranges Everywhere,16,ate,0.0750
+6,Oranges Everywhere,17,change,0.0750
+6,Oranges Everywhere,18,factory,0.0750
+6,Oranges Everywhere,19,grove,0.0750
+6,Oranges Everywhere,20,interesting,0.0750
+7,Pool Fit for a Hedgehog,1,pool,0.6059
+7,Pool Fit for a Hedgehog,2,company,0.5204
+7,Pool Fit for a Hedgehog,3,hot,0.2918
+7,Pool Fit for a Hedgehog,4,commercial,0.2189
+7,Pool Fit for a Hedgehog,5,hedgehog,0.1783
+7,Pool Fit for a Hedgehog,6,review,0.1459
+7,Pool Fit for a Hedgehog,7,job,0.1378
+7,Pool Fit for a Hedgehog,8,price,0.1301
+7,Pool Fit for a Hedgehog,9,cool,0.1189
+7,Pool Fit for a Hedgehog,10,food,0.1140
+7,Pool Fit for a Hedgehog,11,similar,0.1102
+7,Pool Fit for a Hedgehog,12,summer,0.1031
+7,Pool Fit for a Hedgehog,13,good,0.0903
+7,Pool Fit for a Hedgehog,14,decision,0.0730
+7,Pool Fit for a Hedgehog,15,den,0.0730
+7,Pool Fit for a Hedgehog,16,listing,0.0730
+7,Pool Fit for a Hedgehog,17,munching,0.0730
+7,Pool Fit for a Hedgehog,18,recommendation,0.0730
+7,Pool Fit for a Hedgehog,19,summertime,0.0730
+7,Pool Fit for a Hedgehog,20,insect,0.0650
+8,Mouse Madness,1,hawk,0.6395
+8,Mouse Madness,2,nacho,0.2398
+8,Mouse Madness,3,tunnel,0.2398
+8,Mouse Madness,4,cheese,0.2138
+8,Mouse Madness,5,mouse,0.1599
+8,Mouse Madness,6,talon,0.1599
+8,Mouse Madness,7,lunch,0.1425
+8,Mouse Madness,8,passage,0.1425
+8,Mouse Madness,9,bite,0.1302
+8,Mouse Madness,10,mother,0.1302
+8,Mouse Madness,11,zoo,0.1302
+8,Mouse Madness,12,ready,0.1249
+8,Mouse Madness,13,delicious,0.1207
+8,Mouse Madness,14,ground,0.1063
+8,Mouse Madness,15,home,0.0870
+8,Mouse Madness,16,alive,0.0799
+8,Mouse Madness,17,breath,0.0799
+8,Mouse Madness,18,breathing,0.0799
+8,Mouse Madness,19,deep,0.0799
+8,Mouse Madness,20,edge,0.0799
+9,Treasure Hunt,1,treasure,0.6392
+9,Treasure Hunt,2,map,0.5408
+9,Treasure Hunt,3,book,0.2616
+9,Treasure Hunt,4,friend,0.1961
+9,Treasure Hunt,5,town,0.1238
+9,Treasure Hunt,6,dad,0.1176
+9,Treasure Hunt,7,school,0.1121
+9,Treasure Hunt,8,adventure,0.1042
+9,Treasure Hunt,9,marking,0.0983
+9,Treasure Hunt,10,tree,0.0928
+9,Treasure Hunt,11,bush,0.0877
+9,Treasure Hunt,12,end,0.0877
+9,Treasure Hunt,13,recess,0.0877
+9,Treasure Hunt,14,old,0.0801
+9,Treasure Hunt,15,park,0.0801
+9,Treasure Hunt,16,middle,0.0742
+9,Treasure Hunt,17,paper,0.0742
+9,Treasure Hunt,18,pool,0.0742
+9,Treasure Hunt,19,fun,0.0695
+9,Treasure Hunt,20,car,0.0619
+10,The Singing Plants,1,plant,0.6662
+10,The Singing Plants,2,music,0.4138
+10,The Singing Plants,3,singing,0.2177
+10,The Singing Plants,4,window,0.1643
+10,The Singing Plants,5,sink,0.1451
+10,The Singing Plants,6,downstairs,0.1182
+10,The Singing Plants,7,song,0.1182
+10,The Singing Plants,8,kitchen,0.1096
+10,The Singing Plants,9,room,0.1025
+10,The Singing Plants,10,door,0.0913
+10,The Singing Plants,11,dad,0.0868
+10,The Singing Plants,12,airy,0.0726
+10,The Singing Plants,13,appropriate,0.0726
+10,The Singing Plants,14,asleep,0.0726
+10,The Singing Plants,15,awake,0.0726
+10,The Singing Plants,16,caretaker,0.0726
+10,The Singing Plants,17,cow,0.0726
+10,The Singing Plants,18,cup,0.0726
+10,The Singing Plants,19,hesitant,0.0726
+10,The Singing Plants,20,houseplant,0.0726
+11,Ballet,1,dancer,0.6979
+11,Ballet,2,body,0.3162
+11,Ballet,3,ballet,0.2489
+11,Ballet,4,movement,0.2459
+11,Ballet,5,dance,0.1861
+11,Ballet,6,practice,0.1659
+11,Ballet,7,class,0.1643
+11,Ballet,8,muscle,0.1245
+11,Ballet,9,step,0.1137
+11,Ballet,10,teacher,0.1054
+11,Ballet,11,story,0.0986
+11,Ballet,12,barre,0.0931
+11,Ballet,13,graceful,0.0931
+11,Ballet,14,word,0.0931
+11,Ballet,15,leg,0.0830
+11,Ballet,16,music,0.0758
+11,Ballet,17,activity,0.0703
+11,Ballet,18,foot,0.0703
+11,Ballet,19,type,0.0556
+11,Ballet,20,time,0.0518
+12,Curious about Careers - Firefighters,1,firefighter,0.8060
+12,Curious about Careers - Firefighters,2,tool,0.1996
+12,Curious about Careers - Firefighters,3,equipment,0.1690
+12,Curious about Careers - Firefighters,4,people,0.1533
+12,Curious about Careers - Firefighters,5,hose,0.1343
+12,Curious about Careers - Firefighters,6,safe,0.1265
+12,Curious about Careers - Firefighters,7,emergency,0.1198
+12,Curious about Careers - Firefighters,8,car,0.1127
+12,Curious about Careers - Firefighters,9,job,0.1127
+12,Curious about Careers - Firefighters,10,object,0.1094
+12,Curious about Careers - Firefighters,11,special,0.1014
+12,Curious about Careers - Firefighters,12,paramedic,0.0896
+12,Curious about Careers - Firefighters,13,truck,0.0896
+12,Curious about Careers - Firefighters,14,able,0.0700
+12,Curious about Careers - Firefighters,15,time,0.0665
+12,Curious about Careers - Firefighters,16,big,0.0596
+12,Curious about Careers - Firefighters,17,dinner,0.0596
+12,Curious about Careers - Firefighters,18,important,0.0596
+12,Curious about Careers - Firefighters,19,door,0.0564
+12,Curious about Careers - Firefighters,20,work,0.0564
+13,How to Skateboard,1,foot,0.6377
+13,How to Skateboard,2,board,0.4360
+13,How to Skateboard,3,weight,0.3112
+13,How to Skateboard,4,practice,0.1982
+13,How to Skateboard,5,basic,0.1778
+13,How to Skateboard,6,skateboard,0.1778
+13,How to Skateboard,7,movement,0.1343
+13,How to Skateboard,8,skateboarder,0.1334
+13,How to Skateboard,9,skateboarding,0.1334
+13,How to Skateboard,10,trick,0.1189
+13,How to Skateboard,11,sure,0.1141
+13,How to Skateboard,12,left,0.0889
+13,How to Skateboard,13,pad,0.0889
+13,How to Skateboard,14,skate,0.0889
+13,How to Skateboard,15,ground,0.0887
+13,How to Skateboard,16,place,0.0797
+13,How to Skateboard,17,stance,0.0793
+13,How to Skateboard,18,adult,0.0628
+13,How to Skateboard,19,comfortable,0.0591
+13,How to Skateboard,20,important,0.0591
+14,Survival in the Wild,1,animal,0.5750
+14,Survival in the Wild,2,fur,0.3557
+14,Survival in the Wild,3,plant,0.3288
+14,Survival in the Wild,4,predator,0.2372
+14,Survival in the Wild,5,color,0.1779
+14,Survival in the Wild,6,rabbit,0.1779
+14,Survival in the Wild,7,way,0.1661
+14,Survival in the Wild,8,flower,0.1625
+14,Survival in the Wild,9,bee,0.1330
+14,Survival in the Wild,10,camouflage,0.1330
+14,Survival in the Wild,11,environment,0.1330
+14,Survival in the Wild,12,stick,0.1330
+14,Survival in the Wild,13,example,0.1186
+14,Survival in the Wild,14,wild,0.1084
+14,Survival in the Wild,15,tree,0.0837
+14,Survival in the Wild,16,brown,0.0665
+14,Survival in the Wild,17,butterfly,0.0665
+14,Survival in the Wild,18,chameleon,0.0665
+14,Survival in the Wild,19,claw,0.0665
+14,Survival in the Wild,20,fall,0.0665
+15,After the Flood,1,basement,0.4585
+15,After the Flood,2,water,0.3525
+15,After the Flood,3,power,0.3275
+15,After the Flood,4,rain,0.2336
+15,After the Flood,5,river,0.1965
+15,After the Flood,6,road,0.1965
+15,After the Flood,7,house,0.1958
+15,After the Flood,8,hand,0.1388
+15,After the Flood,9,bag,0.1310
+15,After the Flood,10,breakfast,0.1310
+15,After the Flood,11,flood,0.1310
+15,After the Flood,12,rainy,0.1310
+15,After the Flood,13,town,0.1237
+15,After the Flood,14,thing,0.1209
+15,After the Flood,15,clothes,0.1168
+15,After the Flood,16,lot,0.1081
+15,After the Flood,17,lucky,0.1067
+15,After the Flood,18,day,0.0973
+15,After the Flood,19,bad,0.0871
+15,After the Flood,20,people,0.0841
+16,Alex and Amanda's First Concert,1,concert,0.5261
+16,Alex and Amanda's First Concert,2,band,0.4735
+16,Alex and Amanda's First Concert,3,condition,0.2630
+16,Alex and Amanda's First Concert,4,music,0.1714
+16,Alex and Amanda's First Concert,5,sister,0.1714
+16,Alex and Amanda's First Concert,6,couple,0.1589
+16,Alex and Amanda's First Concert,7,live,0.1578
+16,Alex and Amanda's First Concert,8,parent,0.1499
+16,Alex and Amanda's First Concert,9,ticket,0.1407
+16,Alex and Amanda's First Concert,10,grade,0.1286
+16,Alex and Amanda's First Concert,11,dad,0.1258
+16,Alex and Amanda's First Concert,12,adult,0.1115
+16,Alex and Amanda's First Concert,13,effect,0.1052
+16,Alex and Amanda's First Concert,14,sixth,0.1052
+16,Alex and Amanda's First Concert,15,responsible,0.0938
+16,Alex and Amanda's First Concert,16,stand,0.0938
+16,Alex and Amanda's First Concert,17,friend,0.0899
+16,Alex and Amanda's First Concert,18,year,0.0899
+16,Alex and Amanda's First Concert,19,rule,0.0857
+16,Alex and Amanda's First Concert,20,seat,0.0857
+17,Best Friend Blues,1,notebook,0.4199
+17,Best Friend Blues,2,soccer,0.3744
+17,Best Friend Blues,3,problem,0.3559
+17,Best Friend Blues,4,equipment,0.2536
+17,Best Friend Blues,5,mad,0.2052
+17,Best Friend Blues,6,day,0.1871
+17,Best Friend Blues,7,late,0.1497
+17,Best Friend Blues,8,play,0.1497
+17,Best Friend Blues,9,yesterday,0.1497
+17,Best Friend Blues,10,school,0.1435
+17,Best Friend Blues,11,park,0.1368
+17,Best Friend Blues,12,grass,0.1268
+17,Best Friend Blues,13,turn,0.1186
+17,Best Friend Blues,14,book,0.1117
+17,Best Friend Blues,15,lot,0.1040
+17,Best Friend Blues,16,friend,0.0957
+17,Best Friend Blues,17,kid,0.0957
+17,Best Friend Blues,18,home,0.0914
+17,Best Friend Blues,19,argument,0.0840
+17,Best Friend Blues,20,assignment,0.0840
+18,Bring Your Pet Day Disaster,1,bus,0.5392
+18,Bring Your Pet Day Disaster,2,dog,0.3370
+18,Bring Your Pet Day Disaster,3,pet,0.2746
+18,Bring Your Pet Day Disaster,4,grass,0.2036
+18,Bring Your Pet Day Disaster,5,cage,0.2022
+18,Bring Your Pet Day Disaster,6,leash,0.2022
+18,Bring Your Pet Day Disaster,7,animal,0.1793
+18,Bring Your Pet Day Disaster,8,mess,0.1647
+18,Bring Your Pet Day Disaster,9,kid,0.1536
+18,Bring Your Pet Day Disaster,10,voice,0.1428
+18,Bring Your Pet Day Disaster,11,classroom,0.1202
+18,Bring Your Pet Day Disaster,12,fish,0.1202
+18,Bring Your Pet Day Disaster,13,smell,0.1202
+18,Bring Your Pet Day Disaster,14,school,0.1152
+18,Bring Your Pet Day Disaster,15,bird,0.1098
+18,Bring Your Pet Day Disaster,16,day,0.0751
+18,Bring Your Pet Day Disaster,17,backpack,0.0674
+18,Bring Your Pet Day Disaster,18,bathroom,0.0674
+18,Bring Your Pet Day Disaster,19,bedding,0.0674
+18,Bring Your Pet Day Disaster,20,beta,0.0674
+19,Dinner Disaster,1,dinner,0.6221
+19,Dinner Disaster,2,meal,0.2908
+19,Dinner Disaster,3,hard,0.2867
+19,Dinner Disaster,4,grocery,0.1962
+19,Dinner Disaster,5,night,0.1943
+19,Dinner Disaster,6,corn,0.1793
+19,Dinner Disaster,7,chicken,0.1651
+19,Dinner Disaster,8,week,0.1497
+19,Dinner Disaster,9,parent,0.1254
+19,Dinner Disaster,10,time,0.1226
+19,Dinner Disaster,11,funny,0.1100
+19,Dinner Disaster,12,impossible,0.1100
+19,Dinner Disaster,13,meatloaf,0.1100
+19,Dinner Disaster,14,rice,0.1100
+19,Dinner Disaster,15,shopping,0.1100
+19,Dinner Disaster,16,tonight,0.1100
+19,Dinner Disaster,17,dad,0.0987
+19,Dinner Disaster,18,lot,0.0908
+19,Dinner Disaster,19,bite,0.0897
+19,Dinner Disaster,20,plan,0.0897
+20,Fairy Followers,1,fairy,0.5753
+20,Fairy Followers,2,drawing,0.4197
+20,Fairy Followers,3,note,0.2798
+20,Fairy Followers,4,desk,0.2130
+20,Fairy Followers,5,door,0.1975
+20,Fairy Followers,6,paper,0.1580
+20,Fairy Followers,7,tablet,0.1569
+20,Fairy Followers,8,tree,0.1317
+20,Fairy Followers,9,video,0.1185
+20,Fairy Followers,10,little,0.1161
+20,Fairy Followers,11,night,0.1108
+20,Fairy Followers,12,reply,0.1046
+20,Fairy Followers,13,spy,0.1046
+20,Fairy Followers,14,bedroom,0.0933
+20,Fairy Followers,15,creature,0.0933
+20,Fairy Followers,16,land,0.0852
+20,Fairy Followers,17,step,0.0852
+20,Fairy Followers,18,help,0.0790
+20,Fairy Followers,19,window,0.0790
+20,Fairy Followers,20,world,0.0790
+21,The Goose Voyage,1,migration,0.3705
+21,The Goose Voyage,2,point,0.3304
+21,The Goose Voyage,3,eagle,0.2779
+21,The Goose Voyage,4,flock,0.2779
+21,The Goose Voyage,5,glad,0.2617
+21,The Goose Voyage,6,break,0.1963
+21,The Goose Voyage,7,mom,0.1931
+21,The Goose Voyage,8,ready,0.1931
+21,The Goose Voyage,9,migrating,0.1853
+21,The Goose Voyage,10,exciting,0.1652
+21,The Goose Voyage,11,rest,0.1509
+21,The Goose Voyage,12,problem,0.1309
+21,The Goose Voyage,13,long,0.1166
+21,The Goose Voyage,14,dad,0.1108
+21,The Goose Voyage,15,time,0.1032
+21,The Goose Voyage,16,answer,0.0926
+21,The Goose Voyage,17,boring,0.0926
+21,The Goose Voyage,18,busy,0.0926
+21,The Goose Voyage,19,colder,0.0926
+21,The Goose Voyage,20,destination,0.0926
+22,Jump Around,1,bounce,0.4264
+22,Jump Around,2,money,0.4217
+22,Jump Around,3,rule,0.3474
+22,Jump Around,4,trampoline,0.3411
+22,Jump Around,5,house,0.2550
+22,Jump Around,6,friend,0.1944
+22,Jump Around,7,fun,0.1807
+22,Jump Around,8,backyard,0.1706
+22,Jump Around,9,electricity,0.1706
+22,Jump Around,10,high,0.1390
+22,Jump Around,11,outside,0.1134
+22,Jump Around,12,parent,0.0972
+22,Jump Around,13,home,0.0928
+22,Jump Around,14,idea,0.0928
+22,Jump Around,15,awesome,0.0853
+22,Jump Around,16,birthday,0.0853
+22,Jump Around,17,developed,0.0853
+22,Jump Around,18,neck,0.0853
+22,Jump Around,19,party,0.0853
+22,Jump Around,20,rent,0.0853
+23,Mystery of the Broken Pie,1,pie,0.7940
+23,Mystery of the Broken Pie,2,kitchen,0.2398
+23,Mystery of the Broken Pie,3,footprint,0.1985
+23,Mystery of the Broken Pie,4,bird,0.1941
+23,Mystery of the Broken Pie,5,cleaning,0.1416
+23,Mystery of the Broken Pie,6,window,0.1199
+23,Mystery of the Broken Pie,7,oven,0.1191
+23,Mystery of the Broken Pie,8,room,0.1122
+23,Mystery of the Broken Pie,9,outside,0.1056
+23,Mystery of the Broken Pie,10,mess,0.0970
+23,Mystery of the Broken Pie,11,mom,0.0827
+23,Mystery of the Broken Pie,12,right,0.0827
+23,Mystery of the Broken Pie,13,filling,0.0794
+23,Mystery of the Broken Pie,14,mystery,0.0794
+23,Mystery of the Broken Pie,15,yard,0.0794
+23,Mystery of the Broken Pie,16,cat,0.0708
+23,Mystery of the Broken Pie,17,evidence,0.0708
+23,Mystery of the Broken Pie,18,excited,0.0708
+23,Mystery of the Broken Pie,19,idea,0.0648
+23,Mystery of the Broken Pie,20,piece,0.0647
+24,The Best Vacation Ever,1,cruise,0.3469
+24,The Best Vacation Ever,2,ship,0.3469
+24,The Best Vacation Ever,3,pool,0.2619
+24,The Best Vacation Ever,4,parent,0.2372
+24,The Best Vacation Ever,5,swim,0.2081
+24,The Best Vacation Ever,6,wave,0.2081
+24,The Best Vacation Ever,7,board,0.1856
+24,The Best Vacation Ever,8,different,0.1807
+24,The Best Vacation Ever,9,brochure,0.1387
+24,The Best Vacation Ever,10,snowboarding,0.1387
+24,The Best Vacation Ever,11,suit,0.1387
+24,The Best Vacation Ever,12,vacation,0.1387
+24,The Best Vacation Ever,13,weeklong,0.1387
+24,The Best Vacation Ever,14,dad,0.1244
+24,The Best Vacation Ever,15,stance,0.1237
+24,The Best Vacation Ever,16,new,0.1133
+24,The Best Vacation Ever,17,line,0.1130
+24,The Best Vacation Ever,18,mind,0.1130
+24,The Best Vacation Ever,19,second,0.1048
+24,The Best Vacation Ever,20,similar,0.1048
+25,Finders Keepers,1,money,0.4271
+25,Finders Keepers,2,clip,0.3628
+25,Finders Keepers,3,trail,0.3235
+25,Finders Keepers,4,police,0.2696
+25,Finders Keepers,5,dollar,0.2419
+25,Finders Keepers,6,bike,0.2157
+25,Finders Keepers,7,station,0.1971
+25,Finders Keepers,8,branch,0.1209
+25,Finders Keepers,9,cash,0.1209
+25,Finders Keepers,10,hiker,0.1209
+25,Finders Keepers,11,keeper,0.1209
+25,Finders Keepers,12,runner,0.1209
+25,Finders Keepers,13,individual,0.1078
+25,Finders Keepers,14,officer,0.1078
+25,Finders Keepers,15,phone,0.1078
+25,Finders Keepers,16,friend,0.1034
+25,Finders Keepers,17,home,0.0987
+25,Finders Keepers,18,evening,0.0985
+25,Finders Keepers,19,honesty,0.0985
+25,Finders Keepers,20,bit,0.0913
+26,Curious about Careers - Teacher,1,teacher,0.6246
+26,Curious about Careers - Teacher,2,student,0.4917
+26,Curious about Careers - Teacher,3,teaching,0.2298
+26,Curious about Careers - Teacher,4,test,0.1872
+26,Curious about Careers - Teacher,5,school,0.1833
+26,Curious about Careers - Teacher,6,lesson,0.1639
+26,Curious about Careers - Teacher,7,career,0.1379
+26,Curious about Careers - Teacher,8,learning,0.1379
+26,Curious about Careers - Teacher,9,work,0.1157
+26,Curious about Careers - Teacher,10,class,0.0974
+26,Curious about Careers - Teacher,11,fun,0.0974
+26,Curious about Careers - Teacher,12,lot,0.0948
+26,Curious about Careers - Teacher,13,staff,0.0919
+26,Curious about Careers - Teacher,14,time,0.0854
+26,Curious about Careers - Teacher,15,information,0.0820
+26,Curious about Careers - Teacher,16,topic,0.0820
+26,Curious about Careers - Teacher,17,people,0.0787
+26,Curious about Careers - Teacher,18,kid,0.0786
+26,Curious about Careers - Teacher,19,member,0.0749
+26,Curious about Careers - Teacher,20,able,0.0718
+27,Horses,1,horse,0.8968
+27,Horses,2,young,0.1863
+27,Horses,3,people,0.1275
+27,Horses,4,hoof,0.1118
+27,Horses,5,horseshoe,0.1118
+27,Horses,6,baby,0.0745
+27,Horses,7,mammal,0.0745
+27,Horses,8,pony,0.0745
+27,Horses,9,place,0.0668
+27,Horses,10,creature,0.0664
+27,Horses,11,year,0.0637
+27,Horses,12,old,0.0607
+27,Horses,13,pet,0.0607
+27,Horses,14,strong,0.0607
+27,Horses,15,care,0.0526
+27,Horses,16,animal,0.0496
+27,Horses,17,small,0.0469
+27,Horses,18,work,0.0469
+27,Horses,19,food,0.0388
+27,Horses,20,approach,0.0373
+28,How to Care for a Pet Fish,1,fish,0.8000
+28,How to Care for a Pet Fish,2,tank,0.3715
+28,How to Care for a Pet Fish,3,water,0.2108
+28,How to Care for a Pet Fish,4,pet,0.1567
+28,How to Care for a Pet Fish,5,sure,0.1508
+28,How to Care for a Pet Fish,6,type,0.1150
+28,How to Care for a Pet Fish,7,decoration,0.1143
+28,How to Care for a Pet Fish,8,light,0.0968
+28,How to Care for a Pet Fish,9,aquarium,0.0961
+28,How to Care for a Pet Fish,10,care,0.0679
+28,How to Care for a Pet Fish,11,filter,0.0641
+28,How to Care for a Pet Fish,12,gravel,0.0641
+28,How to Care for a Pet Fish,13,heater,0.0641
+28,How to Care for a Pet Fish,14,instruction,0.0641
+28,How to Care for a Pet Fish,15,kit,0.0641
+28,How to Care for a Pet Fish,16,temperature,0.0641
+28,How to Care for a Pet Fish,17,clean,0.0571
+28,How to Care for a Pet Fish,18,pump,0.0571
+28,How to Care for a Pet Fish,19,quality,0.0571
+28,How to Care for a Pet Fish,20,stand,0.0571
+29,How to Make Animations,1,character,0.5316
+29,How to Make Animations,2,artist,0.4498
+29,How to Make Animations,3,picture,0.3088
+29,How to Make Animations,4,cartoon,0.2453
+29,How to Make Animations,5,sound,0.2453
+29,How to Make Animations,6,computer,0.2188
+29,How to Make Animations,7,drawing,0.2188
+29,How to Make Animations,8,animation,0.2045
+29,How to Make Animations,9,clay,0.2045
+29,How to Make Animations,10,image,0.1227
+29,How to Make Animations,11,voice,0.0866
+29,How to Make Animations,12,actor,0.0818
+29,How to Make Animations,13,animated,0.0818
+29,How to Make Animations,14,motion,0.0818
+29,How to Make Animations,15,technique,0.0729
+29,How to Make Animations,16,bit,0.0618
+29,How to Make Animations,17,apps,0.0409
+29,How to Make Animations,18,arm,0.0409
+29,How to Make Animations,19,background,0.0409
+29,How to Make Animations,20,cereal,0.0409
+30,What Police and Detectives Do,1,officer,0.4577
+30,What Police and Detectives Do,2,police,0.4348
+30,What Police and Detectives Do,3,law,0.2824
+30,What Police and Detectives Do,4,detective,0.2310
+30,What Police and Detectives Do,5,agency,0.2054
+30,What Police and Detectives Do,6,criminal,0.1540
+30,What Police and Detectives Do,7,duty,0.1540
+30,What Police and Detectives Do,8,enforcement,0.1540
+30,What Police and Detectives Do,9,crime,0.1373
+30,What Police and Detectives Do,10,arrest,0.1283
+30,What Police and Detectives Do,11,court,0.1283
+30,What Police and Detectives Do,12,suspect,0.1283
+30,What Police and Detectives Do,13,traffic,0.1283
+30,What Police and Detectives Do,14,special,0.1163
+30,What Police and Detectives Do,15,county,0.1027
+30,What Police and Detectives Do,16,investigator,0.1027
+30,What Police and Detectives Do,17,patrol,0.1027
+30,What Police and Detectives Do,18,public,0.1027
+30,What Police and Detectives Do,19,sheriff,0.1027
+30,What Police and Detectives Do,20,activity,0.0969

@@ -1,0 +1,32 @@
+﻿method,doc_a,doc_b,shared_lemmas
+freq_top3,1,4,mom
+freq_top3,1,21,mom
+freq_top3,3,26,teacher
+freq_top3,4,20,door
+freq_top3,4,21,mom
+freq_top3,5,22,money
+freq_top3,5,25,money
+freq_top3,6,12,people
+freq_top3,6,27,people
+freq_top3,10,14,plant
+freq_top3,12,27,people
+freq_top3,15,22,house
+freq_top3,22,25,money
+tfidf_top3,3,26,teacher
+tfidf_top3,7,24,pool
+tfidf_top3,10,14,plant
+tfidf_top3,15,28,water
+tfidf_top3,22,25,money
+final,3,26,teacher
+final,4,17,friend
+final,5,19,shop
+final,20,29,draw drawing
+old_llm_top3,4,9,friendship
+old_llm_top3,10,16,music
+old_llm_top3,10,28,water
+old_llm_top3,20,29,drawing drawings
+baseline_title,3,18,day
+baseline_title,12,26,career careers curious
+baseline_title,17,24,best
+baseline_title,18,19,disaster
+baseline_title,18,28,pet

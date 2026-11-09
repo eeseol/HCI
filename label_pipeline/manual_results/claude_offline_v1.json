@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "model": "Claude Opus 5.5 (claude-opus-5-5)",
+    "generation_note": "Claude (대화형, 고정 프롬프트, 오프라인 1회 생성)",
+    "method": "Claude Code 대화 세션에서 Claude가 LLM 역할을 맡아, prompt.txt(고정본)로 렌더링한 prompts/NN.txt 30개를 읽고 문서당 1회 선택. API 호출 아님, 재샘플링·재선택 없음.",
+    "created": "2026-11-10",
+    "selection_inputs": "prompts/NN.txt의 정보만 사용 (제목, 본문 첫 문단, 알파벳 순 후보 20개)",
+    "description_used_in_selection": false,
+    "description_note": "선택 시 description 미사용. description_1~10은 참가자가 보는 과제 단서이므로 키워드 선택에 사용하지 않음 (cue_match 평가에만 사용).",
+    "disclosures": [
+      "선택 이전 단계(2단계 엑셀 구조 확인)에서 Claude가 doc 01, 04 행의 description_1~10과 기존 LLM_text_1~5 값을 열람한 적 있음. 선택 시 이를 참고하지 않았으나 노출 사실을 기록함 (doc 01 최종 키워드 counselor·canoeing은 기존 LLM_text의 Counselors·Canoeing과 겹침).",
+      "선택자(Claude)는 1~2단계 작업 중 일부 문서(01, 04, 12, 21, 28, 30)의 TF-IDF 순위 목록을 본 적 있음. 프롬프트에는 순위를 숨기고 알파벳 순으로 제시함.",
+      "doc 01, 12, 21은 2단계 테스트 픽스처(tests/manual_test.json)에서 같은 키워드를 사용한 적 있음."
+    ]
+  },
+  "results": {
+    "1":  {"keywords": ["camp", "counselor", "canoeing"]},
+    "2":  {"keywords": ["restaurant", "lebanese", "dish"]},
+    "3":  {"keywords": ["classroom", "teacher", "respect"]},
+    "4":  {"keywords": ["friend", "problem", "basketball"]},
+    "5":  {"keywords": ["business", "shop", "customer"]},
+    "6":  {"keywords": ["orange", "grove", "factory"]},
+    "7":  {"keywords": ["pool", "hedgehog", "summer"]},
+    "8":  {"keywords": ["mouse", "zoo", "cheese"]},
+    "9":  {"keywords": ["treasure", "map", "book"]},
+    "10": {"keywords": ["plant", "singing", "music"]},
+    "11": {"keywords": ["ballet", "dancer", "barre"]},
+    "12": {"keywords": ["firefighter", "emergency", "equipment"]},
+    "13": {"keywords": ["skateboarding", "trick", "stance"]},
+    "14": {"keywords": ["camouflage", "predator", "animal"]},
+    "15": {"keywords": ["flood", "rain", "river"]},
+    "16": {"keywords": ["concert", "ticket", "band"]},
+    "17": {"keywords": ["friend", "argument", "notebook"]},
+    "18": {"keywords": ["pet", "school", "mess"]},
+    "19": {"keywords": ["dinner", "meatloaf", "shopping"]},
+    "20": {"keywords": ["fairy", "drawing", "creature"]},
+    "21": {"keywords": ["migration", "flock", "eagle"]},
+    "22": {"keywords": ["bounce", "trampoline", "party"]},
+    "23": {"keywords": ["pie", "mystery", "evidence"]},
+    "24": {"keywords": ["vacation", "cruise", "snowboarding"]},
+    "25": {"keywords": ["money", "honesty", "trail"]},
+    "26": {"keywords": ["teacher", "lesson", "student"]},
+    "27": {"keywords": ["horse", "mammal", "hoof"]},
+    "28": {"keywords": ["fish", "tank", "aquarium"]},
+    "29": {"keywords": ["animation", "cartoon", "drawing"]},
+    "30": {"keywords": ["police", "detective", "crime"]}
+  }
+}

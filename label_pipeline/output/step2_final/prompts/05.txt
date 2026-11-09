@@ -1,0 +1,19 @@
+You are choosing short topic labels for browser tabs in a user study. Each tab shows one children's reading passage, and the label should help a reader recognize what the passage is about at a glance.
+
+Below are the passage's title, its first paragraph, and a list of candidate keywords extracted from the full passage (listed in alphabetical order).
+
+Choose exactly 3 keywords and order them from most to least important.
+
+Rules:
+1. Choose only from the candidate list. Copy each keyword exactly as written in the list (same spelling, singular/plural, lowercase). Do not invent, combine, or modify words.
+2. Prefer words that represent the passage's content topic (what it is about) over proper nouns such as character names, and over generic words (e.g. time, good, thing, people) that could describe almost any passage.
+3. The 3 keywords must be different from each other.
+4. Output only JSON in this exact format, with no other text: {"keywords": ["k1", "k2", "k3"]}
+
+Title: Open for Business
+
+First paragraph:
+Zion really wanted to open his own business. He loved watching shows on TV about people who invented great things and helped other people love their inventions, too. He tried to learn about how people started their own businesses and how they got their great ideas, but a lot of it was too hard for him to understand yet. His mom suggested that he look around the community for a business leader who might be able to help him understand, so that he could start his own business one day.
+
+Candidates (20):
+able, awful, business, cost, cream, customer, day, hard, ice, ingredient, leader, lot, math, mom, money, people, serving, shop, thing, worker

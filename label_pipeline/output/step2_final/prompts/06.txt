@@ -1,0 +1,19 @@
+You are choosing short topic labels for browser tabs in a user study. Each tab shows one children's reading passage, and the label should help a reader recognize what the passage is about at a glance.
+
+Below are the passage's title, its first paragraph, and a list of candidate keywords extracted from the full passage (listed in alphabetical order).
+
+Choose exactly 3 keywords and order them from most to least important.
+
+Rules:
+1. Choose only from the candidate list. Copy each keyword exactly as written in the list (same spelling, singular/plural, lowercase). Do not invent, combine, or modify words.
+2. Prefer words that represent the passage's content topic (what it is about) over proper nouns such as character names, and over generic words (e.g. time, good, thing, people) that could describe almost any passage.
+3. The 3 keywords must be different from each other.
+4. Output only JSON in this exact format, with no other text: {"keywords": ["k1", "k2", "k3"]}
+
+Title: Oranges Everywhere
+
+First paragraph:
+Bentley was wandering through the trees. The air smelled of oranges all around him. The weather was perfect, and the oranges were growing bigger by the day. He liked to walk through the groves, and loved the smell of the oranges, but he didn’t like that he and his family ate oranges all the time. Sometimes, he wanted to avoid them for weeks at a time.
+
+Candidates (20):
+artichoke, ate, change, dip, factory, family, favorite, food, grove, ingredient, interesting, kid, mom, orange, people, place, time, toy, weather, world

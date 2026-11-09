@@ -1,0 +1,6 @@
+﻿method,name,mean_cue_match,mean_cue_rate,docs_with_cue_match_ge1,mean_labels_per_doc,overlapping_pairs,total_pairs
+freq_top3,단순 빈도 Top3,1.667,0.556,29,3.0,13,435
+tfidf_top3,TF-IDF Top3,1.8,0.6,29,3.0,5,435
+final,최종(TF-IDF+LLM),1.767,0.589,30,3.0,4,435
+old_llm_top3,기존 LLM_text_1~3,2.2,0.733,30,3.0,4,435
+baseline_title,Baseline 제목 내용어,0.0,0.0,0,2.1,5,435

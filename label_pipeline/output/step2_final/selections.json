@@ -1,0 +1,1142 @@
+{
+  "1": {
+    "title": "An Honestly Fun Camp",
+    "first_paragraph": "Will couldn’t wait for September when school would start. It was early August, and he was at the same summer camp he had been going to for the last five years. His dad went to the camp when he was a boy and loved it, so Will didn’t want to disappoint his dad by telling him that he didn’t even like it.",
+    "candidates": [
+      "camp",
+      "counselor",
+      "baseball",
+      "mom",
+      "canoeing",
+      "dad",
+      "horse",
+      "meal",
+      "week",
+      "canoe",
+      "stern",
+      "horseback",
+      "summer",
+      "year",
+      "food",
+      "base",
+      "bow",
+      "catcher",
+      "letter",
+      "lousy"
+    ],
+    "keywords": [
+      "camp",
+      "counselor",
+      "canoeing"
+    ],
+    "raw_output": {
+      "keywords": [
+        "camp",
+        "counselor",
+        "canoeing"
+      ]
+    }
+  },
+  "2": {
+    "title": "Emma's Favorite Restaurant",
+    "first_paragraph": "When Emma and her family go out to dinner, they always go to their favorite restaurant. Their favorite restaurant is an Italian restaurant, and they usually go once a week. Emma always gets ravioli, and her little brother Josh always gets spaghetti with meatballs. Their parents like to try different things.",
+    "candidates": [
+      "restaurant",
+      "meatball",
+      "favorite",
+      "lebanese",
+      "sauce",
+      "new",
+      "host",
+      "italian",
+      "kibbeh",
+      "lamb",
+      "manti",
+      "pizza",
+      "ravioli",
+      "server",
+      "dish",
+      "spaghetti",
+      "week",
+      "bite",
+      "meal",
+      "similar"
+    ],
+    "keywords": [
+      "restaurant",
+      "lebanese",
+      "dish"
+    ],
+    "raw_output": {
+      "keywords": [
+        "restaurant",
+        "lebanese",
+        "dish"
+      ]
+    }
+  },
+  "3": {
+    "title": "First Day",
+    "first_paragraph": "Here we go again, I thought, the first day of fourth grade . I always got a little nervous on the first day of school. I knew a lot of the other kids who would be in my class, and I had heard that the teacher was nice. There would still be a lot of new things, though.",
+    "candidates": [
+      "value",
+      "new",
+      "teacher",
+      "classroom",
+      "group",
+      "partner",
+      "line",
+      "class",
+      "fairness",
+      "fourth",
+      "respect",
+      "nice",
+      "sign",
+      "student",
+      "hand",
+      "summer",
+      "lot",
+      "year",
+      "idea",
+      "carpet"
+    ],
+    "keywords": [
+      "classroom",
+      "teacher",
+      "respect"
+    ],
+    "raw_output": {
+      "keywords": [
+        "classroom",
+        "teacher",
+        "respect"
+      ]
+    }
+  },
+  "4": {
+    "title": "Left Out",
+    "first_paragraph": "Trish was playing basketball with her brother outside when she saw a car pull up in Josie’s driveway. Josie jumped out of the car, and Trish could hear a lot of voices laughing and saying goodbye to Josie.",
+    "candidates": [
+      "door",
+      "wrong",
+      "friend",
+      "mom",
+      "problem",
+      "basketball",
+      "car",
+      "choice",
+      "snake",
+      "mad",
+      "sorry",
+      "room",
+      "good",
+      "school",
+      "right",
+      "convinced",
+      "earmuff",
+      "goodbye",
+      "knock",
+      "pillow"
+    ],
+    "keywords": [
+      "friend",
+      "problem",
+      "basketball"
+    ],
+    "raw_output": {
+      "keywords": [
+        "friend",
+        "problem",
+        "basketball"
+      ]
+    }
+  },
+  "5": {
+    "title": "Open for Business",
+    "first_paragraph": "Zion really wanted to open his own business. He loved watching shows on TV about people who invented great things and helped other people love their inventions, too. He tried to learn about how people started their own businesses and how they got their great ideas, but a lot of it was too hard for him to understand yet. His mom suggested that he look around the community for a business leader who might be able to help him understand, so that he could start his own business one day.",
+    "candidates": [
+      "business",
+      "cream",
+      "ice",
+      "money",
+      "math",
+      "cost",
+      "lot",
+      "ingredient",
+      "mom",
+      "leader",
+      "serving",
+      "worker",
+      "people",
+      "shop",
+      "thing",
+      "day",
+      "able",
+      "hard",
+      "awful",
+      "customer"
+    ],
+    "keywords": [
+      "business",
+      "shop",
+      "customer"
+    ],
+    "raw_output": {
+      "keywords": [
+        "business",
+        "shop",
+        "customer"
+      ]
+    }
+  },
+  "6": {
+    "title": "Oranges Everywhere",
+    "first_paragraph": "Bentley was wandering through the trees. The air smelled of oranges all around him. The weather was perfect, and the oranges were growing bigger by the day. He liked to walk through the groves, and loved the smell of the oranges, but he didn’t like that he and his family ate oranges all the time. Sometimes, he wanted to avoid them for weeks at a time.",
+    "candidates": [
+      "orange",
+      "dip",
+      "food",
+      "ingredient",
+      "toy",
+      "world",
+      "artichoke",
+      "family",
+      "people",
+      "favorite",
+      "weather",
+      "time",
+      "place",
+      "kid",
+      "mom",
+      "ate",
+      "change",
+      "factory",
+      "grove",
+      "interesting"
+    ],
+    "keywords": [
+      "orange",
+      "grove",
+      "factory"
+    ],
+    "raw_output": {
+      "keywords": [
+        "orange",
+        "grove",
+        "factory"
+      ]
+    }
+  },
+  "7": {
+    "title": "Pool Fit for a Hedgehog",
+    "first_paragraph": "A Summer was here, and it was a hot one! Cora the hedgehog was out foraging for food, trying to stay cool. She saw her friend Heather by her den. Heather was splashing around in her little pool outside.",
+    "candidates": [
+      "pool",
+      "company",
+      "hot",
+      "commercial",
+      "hedgehog",
+      "review",
+      "job",
+      "price",
+      "cool",
+      "food",
+      "similar",
+      "summer",
+      "good",
+      "decision",
+      "den",
+      "listing",
+      "munching",
+      "recommendation",
+      "summertime",
+      "insect"
+    ],
+    "keywords": [
+      "pool",
+      "hedgehog",
+      "summer"
+    ],
+    "raw_output": {
+      "keywords": [
+        "pool",
+        "hedgehog",
+        "summer"
+      ]
+    }
+  },
+  "8": {
+    "title": "Mouse Madness",
+    "first_paragraph": "The tunnel was dark, but Marty knew his way through it. He used his powerful nose to find the passage out. It smelled like his favorite food: cheese! When he got to the edge of the passage, Marty paused. His mother had lectured him enough about dashing into the open without looking. It was dangerous. A zoo patron could see him and start screaming.",
+    "candidates": [
+      "hawk",
+      "nacho",
+      "tunnel",
+      "cheese",
+      "mouse",
+      "talon",
+      "lunch",
+      "passage",
+      "bite",
+      "mother",
+      "zoo",
+      "ready",
+      "delicious",
+      "ground",
+      "home",
+      "alive",
+      "breath",
+      "breathing",
+      "deep",
+      "edge"
+    ],
+    "keywords": [
+      "mouse",
+      "zoo",
+      "cheese"
+    ],
+    "raw_output": {
+      "keywords": [
+        "mouse",
+        "zoo",
+        "cheese"
+      ]
+    }
+  },
+  "9": {
+    "title": "Treasure Hunt",
+    "first_paragraph": "Danny and Susie were walking to school, when Susie noticed something under the bushes. “What is that?” Susie asked, as she pointed to the bush. “Hmmm, I’m not sure.” Danny reached down to grab it. It was a book, and it looked old. The title was Buried Treasure. He started looking through the book. It was full of different maps that were supposed to lead to buried treasure . “Wow, this book looks great!”",
+    "candidates": [
+      "treasure",
+      "map",
+      "book",
+      "friend",
+      "town",
+      "dad",
+      "school",
+      "adventure",
+      "marking",
+      "tree",
+      "bush",
+      "end",
+      "recess",
+      "old",
+      "park",
+      "middle",
+      "paper",
+      "pool",
+      "fun",
+      "car"
+    ],
+    "keywords": [
+      "treasure",
+      "map",
+      "book"
+    ],
+    "raw_output": {
+      "keywords": [
+        "treasure",
+        "map",
+        "book"
+      ]
+    }
+  },
+  "10": {
+    "title": "The Singing Plants",
+    "first_paragraph": "Todd awoke to singing. The singing was light and airy. It reminded him of a sunrise. Well that’s appropriate , thought Todd, it’s so early the sun is probably just rising . As his mind grew more awake, Todd realized that he didn’t know where the music was coming from. He checked his radio, as well as his phone. Nothing.",
+    "candidates": [
+      "plant",
+      "music",
+      "singing",
+      "window",
+      "sink",
+      "downstairs",
+      "song",
+      "kitchen",
+      "room",
+      "door",
+      "dad",
+      "airy",
+      "appropriate",
+      "asleep",
+      "awake",
+      "caretaker",
+      "cow",
+      "cup",
+      "hesitant",
+      "houseplant"
+    ],
+    "keywords": [
+      "plant",
+      "singing",
+      "music"
+    ],
+    "raw_output": {
+      "keywords": [
+        "plant",
+        "singing",
+        "music"
+      ]
+    }
+  },
+  "11": {
+    "title": "Ballet",
+    "first_paragraph": "Ballet is a type of dance that dates back to the 15th century (in the 1400s). It is an art form that can be used to express a feeling, tell a story, or interpret a song. Ballet dancers are strong, graceful, and flexible. Ballet dancers may be men and women - ballet is not just for girls!",
+    "candidates": [
+      "dancer",
+      "body",
+      "ballet",
+      "movement",
+      "dance",
+      "practice",
+      "class",
+      "muscle",
+      "step",
+      "teacher",
+      "story",
+      "barre",
+      "graceful",
+      "word",
+      "leg",
+      "music",
+      "activity",
+      "foot",
+      "type",
+      "time"
+    ],
+    "keywords": [
+      "ballet",
+      "dancer",
+      "barre"
+    ],
+    "raw_output": {
+      "keywords": [
+        "ballet",
+        "dancer",
+        "barre"
+      ]
+    }
+  },
+  "12": {
+    "title": "Curious about Careers - Firefighters",
+    "first_paragraph": "Firefighting is an important job to keep people safe and help keep fires from damaging too much property. It is a tough job, but if you like to help people, it could be the job for you!",
+    "candidates": [
+      "firefighter",
+      "tool",
+      "equipment",
+      "people",
+      "hose",
+      "safe",
+      "emergency",
+      "car",
+      "job",
+      "object",
+      "special",
+      "paramedic",
+      "truck",
+      "able",
+      "time",
+      "big",
+      "dinner",
+      "important",
+      "door",
+      "work"
+    ],
+    "keywords": [
+      "firefighter",
+      "emergency",
+      "equipment"
+    ],
+    "raw_output": {
+      "keywords": [
+        "firefighter",
+        "emergency",
+        "equipment"
+      ]
+    }
+  },
+  "13": {
+    "title": "How to Skateboard",
+    "first_paragraph": "Skateboarding is exhilarating - you can move quickly and fly through the air! Before you can do amazing tricks in the air, though, you need to learn the basics of skateboarding, and be prepared for a lot of trial and error.",
+    "candidates": [
+      "foot",
+      "board",
+      "weight",
+      "practice",
+      "basic",
+      "skateboard",
+      "movement",
+      "skateboarder",
+      "skateboarding",
+      "trick",
+      "sure",
+      "left",
+      "pad",
+      "skate",
+      "ground",
+      "place",
+      "stance",
+      "adult",
+      "comfortable",
+      "important"
+    ],
+    "keywords": [
+      "skateboarding",
+      "trick",
+      "stance"
+    ],
+    "raw_output": {
+      "keywords": [
+        "skateboarding",
+        "trick",
+        "stance"
+      ]
+    }
+  },
+  "14": {
+    "title": "Survival in the Wild",
+    "first_paragraph": "Plants and animals have the hard job of surviving in a very wild world. How do they do it? There are many ways plants and animals have adapted in order to survive.",
+    "candidates": [
+      "animal",
+      "fur",
+      "plant",
+      "predator",
+      "color",
+      "rabbit",
+      "way",
+      "flower",
+      "bee",
+      "camouflage",
+      "environment",
+      "stick",
+      "example",
+      "wild",
+      "tree",
+      "brown",
+      "butterfly",
+      "chameleon",
+      "claw",
+      "fall"
+    ],
+    "keywords": [
+      "camouflage",
+      "predator",
+      "animal"
+    ],
+    "raw_output": {
+      "keywords": [
+        "camouflage",
+        "predator",
+        "animal"
+      ]
+    }
+  },
+  "15": {
+    "title": "After the Flood",
+    "first_paragraph": "Reading about weather in books is one thing, but living through a natural disaster was another. Even though the flood was not too bad, I was not prepared for what it was really like!",
+    "candidates": [
+      "basement",
+      "water",
+      "power",
+      "rain",
+      "river",
+      "road",
+      "house",
+      "hand",
+      "bag",
+      "breakfast",
+      "flood",
+      "rainy",
+      "town",
+      "thing",
+      "clothes",
+      "lot",
+      "lucky",
+      "day",
+      "bad",
+      "people"
+    ],
+    "keywords": [
+      "flood",
+      "rain",
+      "river"
+    ],
+    "raw_output": {
+      "keywords": [
+        "flood",
+        "rain",
+        "river"
+      ]
+    }
+  },
+  "16": {
+    "title": "Alex and Amanda's First Concert",
+    "first_paragraph": "The most popular teen band was coming to town, and both Alex and his twin sister Amanda really wanted to go to the concert. They had never been to a concert because their parents’ rule was that you must be in sixth grade to go to a concert. Alex and Amanda were only in fifth grade.",
+    "candidates": [
+      "concert",
+      "band",
+      "condition",
+      "music",
+      "sister",
+      "couple",
+      "live",
+      "parent",
+      "ticket",
+      "grade",
+      "dad",
+      "adult",
+      "effect",
+      "sixth",
+      "responsible",
+      "stand",
+      "friend",
+      "year",
+      "rule",
+      "seat"
+    ],
+    "keywords": [
+      "concert",
+      "ticket",
+      "band"
+    ],
+    "raw_output": {
+      "keywords": [
+        "concert",
+        "ticket",
+        "band"
+      ]
+    }
+  },
+  "17": {
+    "title": "Best Friend Blues",
+    "first_paragraph": "Alexa and Brittany were best friends. They’d known each other since Brittany moved next door in 2nd grade. They hung out almost every day after school… when they were getting along, that is.",
+    "candidates": [
+      "notebook",
+      "soccer",
+      "problem",
+      "equipment",
+      "mad",
+      "day",
+      "late",
+      "play",
+      "yesterday",
+      "school",
+      "park",
+      "grass",
+      "turn",
+      "book",
+      "lot",
+      "friend",
+      "kid",
+      "home",
+      "argument",
+      "assignment"
+    ],
+    "keywords": [
+      "friend",
+      "argument",
+      "notebook"
+    ],
+    "raw_output": {
+      "keywords": [
+        "friend",
+        "argument",
+        "notebook"
+      ]
+    }
+  },
+  "18": {
+    "title": "Bring Your Pet Day Disaster",
+    "first_paragraph": "I had my backpack on my back and a leash in my hand. It was “Bring Your Pet to School” day! My dog Jax was happily trotting beside me as we walked to the bus stop. The other kids in my neighborhood had their pets, too. Josie had a fish bowl with her beta fish. John had a crate with his cat, Maxie, inside. Paula had a bird cage with her parakeet, Gerald, perched on a little swing. We were all excited to have our pets with us.",
+    "candidates": [
+      "bus",
+      "dog",
+      "pet",
+      "grass",
+      "cage",
+      "leash",
+      "animal",
+      "mess",
+      "kid",
+      "voice",
+      "classroom",
+      "fish",
+      "smell",
+      "school",
+      "bird",
+      "day",
+      "backpack",
+      "bathroom",
+      "bedding",
+      "beta"
+    ],
+    "keywords": [
+      "pet",
+      "school",
+      "mess"
+    ],
+    "raw_output": {
+      "keywords": [
+        "pet",
+        "school",
+        "mess"
+      ]
+    }
+  },
+  "19": {
+    "title": "Dinner Disaster",
+    "first_paragraph": "“Ugh, meatloaf again? I hate meatloaf!” Matt yelled. “I’m not eating this.” Matt’s mom and dad looked at each other. Matt’s outbursts had been happening at least once a week all summer long.",
+    "candidates": [
+      "dinner",
+      "meal",
+      "hard",
+      "grocery",
+      "night",
+      "corn",
+      "chicken",
+      "week",
+      "parent",
+      "time",
+      "funny",
+      "impossible",
+      "meatloaf",
+      "rice",
+      "shopping",
+      "tonight",
+      "dad",
+      "lot",
+      "bite",
+      "plan"
+    ],
+    "keywords": [
+      "dinner",
+      "meatloaf",
+      "shopping"
+    ],
+    "raw_output": {
+      "keywords": [
+        "dinner",
+        "meatloaf",
+        "shopping"
+      ]
+    }
+  },
+  "20": {
+    "title": "Fairy Followers",
+    "first_paragraph": "Drawing is my passion. I draw the land around me, and lands I make up in my head. I draw people I see, and fictional creatures. I draw anything and everything that gives me inspiration. Lately, though, something strange is happening with my drawings.",
+    "candidates": [
+      "fairy",
+      "drawing",
+      "note",
+      "desk",
+      "door",
+      "paper",
+      "tablet",
+      "tree",
+      "video",
+      "little",
+      "night",
+      "reply",
+      "spy",
+      "bedroom",
+      "creature",
+      "land",
+      "step",
+      "help",
+      "window",
+      "world"
+    ],
+    "keywords": [
+      "fairy",
+      "drawing",
+      "creature"
+    ],
+    "raw_output": {
+      "keywords": [
+        "fairy",
+        "drawing",
+        "creature"
+      ]
+    }
+  },
+  "21": {
+    "title": "The Goose Voyage",
+    "first_paragraph": "“Are you ready Greg?” Shane asked. “It’s going to be one long adventure!” “I was born ready!” I answered. We were all getting ready for our yearly migration south. The days were growing shorter, the weather was getting colder, and we all just felt like it was time to move. Somehow, we all knew there’d be more food and we’d be mo re comfortable if we flew south for the winter.",
+    "candidates": [
+      "migration",
+      "point",
+      "eagle",
+      "flock",
+      "glad",
+      "break",
+      "mom",
+      "ready",
+      "migrating",
+      "exciting",
+      "rest",
+      "problem",
+      "long",
+      "dad",
+      "time",
+      "answer",
+      "boring",
+      "busy",
+      "colder",
+      "destination"
+    ],
+    "keywords": [
+      "migration",
+      "flock",
+      "eagle"
+    ],
+    "raw_output": {
+      "keywords": [
+        "migration",
+        "flock",
+        "eagle"
+      ]
+    }
+  },
+  "22": {
+    "title": "Jump Around",
+    "first_paragraph": "“Whee!” I could hear kids cheering all around me. It was Nicky’s birthday party and we were all having fun in the bounce house. We were jumping up as high as we could, and falling down to let the soft ground catch us. I loved jumping in bounce houses! I wi sh I could have one of these in my backyard , I thought.",
+    "candidates": [
+      "bounce",
+      "money",
+      "rule",
+      "trampoline",
+      "house",
+      "friend",
+      "fun",
+      "backyard",
+      "electricity",
+      "high",
+      "outside",
+      "parent",
+      "home",
+      "idea",
+      "awesome",
+      "birthday",
+      "developed",
+      "neck",
+      "party",
+      "rent"
+    ],
+    "keywords": [
+      "bounce",
+      "trampoline",
+      "party"
+    ],
+    "raw_output": {
+      "keywords": [
+        "bounce",
+        "trampoline",
+        "party"
+      ]
+    }
+  },
+  "23": {
+    "title": "Mystery of the Broken Pie",
+    "first_paragraph": "The sun was shining on the sparkling grass. It was morning, and the grass was still wet from the dew. We were excited to see the sunshine after days of rain! Sydney and I were tired of being stuck inside.",
+    "candidates": [
+      "pie",
+      "kitchen",
+      "footprint",
+      "bird",
+      "cleaning",
+      "window",
+      "oven",
+      "room",
+      "outside",
+      "mess",
+      "mom",
+      "right",
+      "filling",
+      "mystery",
+      "yard",
+      "cat",
+      "evidence",
+      "excited",
+      "idea",
+      "piece"
+    ],
+    "keywords": [
+      "pie",
+      "mystery",
+      "evidence"
+    ],
+    "raw_output": {
+      "keywords": [
+        "pie",
+        "mystery",
+        "evidence"
+      ]
+    }
+  },
+  "24": {
+    "title": "The Best Vacation Ever",
+    "first_paragraph": "Winter break was fast approaching, and all Scott wanted to do was go snowboarding. Unfortunately, Scott’s parents had different plans. They had booked a weeklong tropical cruise. Scott hated warm weather and asked if he could just stay at his best friend’s house so he could snowboard every day with his buddies at the local mountain. His parents didn’t want to hear anything of it. He kept debating them about the topic, but they would not change their minds. Family time was important to them, and it was tradition that they spend winter break together.",
+    "candidates": [
+      "cruise",
+      "ship",
+      "pool",
+      "parent",
+      "swim",
+      "wave",
+      "board",
+      "different",
+      "brochure",
+      "snowboarding",
+      "suit",
+      "vacation",
+      "weeklong",
+      "dad",
+      "stance",
+      "new",
+      "line",
+      "mind",
+      "second",
+      "similar"
+    ],
+    "keywords": [
+      "vacation",
+      "cruise",
+      "snowboarding"
+    ],
+    "raw_output": {
+      "keywords": [
+        "vacation",
+        "cruise",
+        "snowboarding"
+      ]
+    }
+  },
+  "25": {
+    "title": "Finders Keepers",
+    "first_paragraph": "It was the middle of the day on a bright sunny Saturday, and Jay and his friends Mike and Tony were riding their dirt bikes on one of their favorite off -road trails. They usually didn’t ride early in the day or in the evening because hikers and runners liked the trail too, but the hikers and runners generally used the trail in the mornings and evenings.",
+    "candidates": [
+      "money",
+      "clip",
+      "trail",
+      "police",
+      "dollar",
+      "bike",
+      "station",
+      "branch",
+      "cash",
+      "hiker",
+      "keeper",
+      "runner",
+      "individual",
+      "officer",
+      "phone",
+      "friend",
+      "home",
+      "evening",
+      "honesty",
+      "bit"
+    ],
+    "keywords": [
+      "money",
+      "honesty",
+      "trail"
+    ],
+    "raw_output": {
+      "keywords": [
+        "money",
+        "honesty",
+        "trail"
+      ]
+    }
+  },
+  "26": {
+    "title": "Curious about Careers - Teacher",
+    "first_paragraph": "Do you enjoy working with kids? Do you like helping people? Is learning fun for you? Teaching could be the career for you! Teachers need to graduate from college and get their teaching license in whichever state they would like to teach in. This requires taking some tests and working with another teacher for a few months to make sure they understand the best ways to work with students.",
+    "candidates": [
+      "teacher",
+      "student",
+      "teaching",
+      "test",
+      "school",
+      "lesson",
+      "career",
+      "learning",
+      "work",
+      "class",
+      "fun",
+      "lot",
+      "staff",
+      "time",
+      "information",
+      "topic",
+      "people",
+      "kid",
+      "member",
+      "able"
+    ],
+    "keywords": [
+      "teacher",
+      "lesson",
+      "student"
+    ],
+    "raw_output": {
+      "keywords": [
+        "teacher",
+        "lesson",
+        "student"
+      ]
+    }
+  },
+  "27": {
+    "title": "Horses",
+    "first_paragraph": "Horses are beautiful creatures. They can be different colors, and can run quickly. People like to watch horses because they are strong and powerful. Horses are mammals. Mammals are animals that have hair or fur, are warm -blooded, and usually give birth to live young. The mother horse generally has one baby in the spring, and feeds the baby milk. Horses have long legs, and big eyes that can see almost all the way around them. They can walk, trot, gallop and jump.",
+    "candidates": [
+      "horse",
+      "young",
+      "people",
+      "hoof",
+      "horseshoe",
+      "baby",
+      "mammal",
+      "pony",
+      "place",
+      "creature",
+      "year",
+      "old",
+      "pet",
+      "strong",
+      "care",
+      "animal",
+      "small",
+      "work",
+      "food",
+      "approach"
+    ],
+    "keywords": [
+      "horse",
+      "mammal",
+      "hoof"
+    ],
+    "raw_output": {
+      "keywords": [
+        "horse",
+        "mammal",
+        "hoof"
+      ]
+    }
+  },
+  "28": {
+    "title": "How to Care for a Pet Fish",
+    "first_paragraph": "Taking care of a pet is a big responsibility, so you want to make sure you learn all about your pet before bringing it home! Many kids have fish as their first pet, and fish can give you a good idea of whether or not you’ll be able to take care of a more complicated pet later on.",
+    "candidates": [
+      "fish",
+      "tank",
+      "water",
+      "pet",
+      "sure",
+      "type",
+      "decoration",
+      "light",
+      "aquarium",
+      "care",
+      "filter",
+      "gravel",
+      "heater",
+      "instruction",
+      "kit",
+      "temperature",
+      "clean",
+      "pump",
+      "quality",
+      "stand"
+    ],
+    "keywords": [
+      "fish",
+      "tank",
+      "aquarium"
+    ],
+    "raw_output": {
+      "keywords": [
+        "fish",
+        "tank",
+        "aquarium"
+      ]
+    }
+  },
+  "29": {
+    "title": "How to Make Animations",
+    "first_paragraph": "It’s Saturday morning. You wake up, grab a bowl of cereal, and relax in front of the TV watching cartoons. Have you ever wondered how those animated cartoons you enjoy are made?",
+    "candidates": [
+      "character",
+      "artist",
+      "picture",
+      "cartoon",
+      "sound",
+      "computer",
+      "drawing",
+      "animation",
+      "clay",
+      "image",
+      "voice",
+      "actor",
+      "animated",
+      "motion",
+      "technique",
+      "bit",
+      "apps",
+      "arm",
+      "background",
+      "cereal"
+    ],
+    "keywords": [
+      "animation",
+      "cartoon",
+      "drawing"
+    ],
+    "raw_output": {
+      "keywords": [
+        "animation",
+        "cartoon",
+        "drawing"
+      ]
+    }
+  },
+  "30": {
+    "title": "What Police and Detectives Do",
+    "first_paragraph": "Police officers protect lives and property. Detectives and criminal investigators, who are sometimes called agents or special agents, gather facts and collect evidence of possible crimes.",
+    "candidates": [
+      "officer",
+      "police",
+      "law",
+      "detective",
+      "agency",
+      "criminal",
+      "duty",
+      "enforcement",
+      "crime",
+      "arrest",
+      "court",
+      "suspect",
+      "traffic",
+      "special",
+      "county",
+      "investigator",
+      "patrol",
+      "public",
+      "sheriff",
+      "activity"
+    ],
+    "keywords": [
+      "police",
+      "detective",
+      "crime"
+    ],
+    "raw_output": {
+      "keywords": [
+        "police",
+        "detective",
+        "crime"
+      ]
+    }
+  }
+}

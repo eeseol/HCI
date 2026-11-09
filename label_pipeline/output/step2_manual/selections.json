@@ -1,0 +1,166 @@
+{
+  "1": {
+    "title": "An Honestly Fun Camp",
+    "first_paragraph": "Will couldn’t wait for September when school would start. It was early August, and he was at the same summer camp he had been going to for the last five years. His dad went to the camp when he was a boy and loved it, so Will didn’t want to disappoint his dad by telling him that he didn’t even like it.",
+    "candidates": [
+      "camp",
+      "counselor",
+      "baseball",
+      "mom",
+      "canoeing",
+      "dad",
+      "horse",
+      "meal",
+      "week",
+      "canoe",
+      "stern",
+      "horseback",
+      "summer",
+      "year",
+      "food",
+      "base",
+      "bow",
+      "catcher",
+      "letter",
+      "lousy"
+    ],
+    "keywords": [
+      "camp",
+      "canoeing",
+      "counselor"
+    ],
+    "raw_output": {
+      "keywords": [
+        "camp",
+        "canoeing",
+        "counselor"
+      ]
+    }
+  },
+  "12": {
+    "title": "Curious about Careers - Firefighters",
+    "first_paragraph": "Firefighting is an important job to keep people safe and help keep fires from damaging too much property. It is a tough job, but if you like to help people, it could be the job for you!",
+    "candidates": [
+      "firefighter",
+      "tool",
+      "equipment",
+      "people",
+      "hose",
+      "safe",
+      "emergency",
+      "car",
+      "job",
+      "object",
+      "special",
+      "paramedic",
+      "truck",
+      "able",
+      "time",
+      "big",
+      "dinner",
+      "important",
+      "door",
+      "work"
+    ],
+    "keywords": [
+      "firefighter",
+      "equipment",
+      "emergency"
+    ],
+    "raw_output": {
+      "keywords": [
+        "firefighter",
+        "equipment",
+        "emergency"
+      ]
+    }
+  },
+  "21": {
+    "title": "The Goose Voyage",
+    "first_paragraph": "“Are you ready Greg?” Shane asked. “It’s going to be one long adventure!” “I was born ready!” I answered. We were all getting ready for our yearly migration south. The days were growing shorter, the weather was getting colder, and we all just felt like it was time to move. Somehow, we all knew there’d be more food and we’d be mo re comfortable if we flew south for the winter.",
+    "candidates": [
+      "migration",
+      "point",
+      "eagle",
+      "flock",
+      "glad",
+      "break",
+      "mom",
+      "ready",
+      "migrating",
+      "exciting",
+      "rest",
+      "problem",
+      "long",
+      "dad",
+      "time",
+      "answer",
+      "boring",
+      "busy",
+      "colder",
+      "destination"
+    ],
+    "keywords": [
+      "migration",
+      "flock",
+      "eagle"
+    ],
+    "raw_output": "{\"keywords\": [\"migration\", \"flock\", \"eagle\"]}"
+  },
+  "4": {
+    "title": "Left Out",
+    "first_paragraph": "Trish was playing basketball with her brother outside when she saw a car pull up in Josie’s driveway. Josie jumped out of the car, and Trish could hear a lot of voices laughing and saying goodbye to Josie.",
+    "candidates": [
+      "door",
+      "wrong",
+      "friend",
+      "mom",
+      "problem",
+      "basketball",
+      "car",
+      "choice",
+      "snake",
+      "mad",
+      "sorry",
+      "room",
+      "good",
+      "school",
+      "right",
+      "convinced",
+      "earmuff",
+      "goodbye",
+      "knock",
+      "pillow"
+    ],
+    "keywords": null,
+    "error": "keywords not in candidate list: ['trish']"
+  },
+  "30": {
+    "title": "What Police and Detectives Do",
+    "first_paragraph": "Police officers protect lives and property. Detectives and criminal investigators, who are sometimes called agents or special agents, gather facts and collect evidence of possible crimes.",
+    "candidates": [
+      "officer",
+      "police",
+      "law",
+      "detective",
+      "agency",
+      "criminal",
+      "duty",
+      "enforcement",
+      "crime",
+      "arrest",
+      "court",
+      "suspect",
+      "traffic",
+      "special",
+      "county",
+      "investigator",
+      "patrol",
+      "public",
+      "sheriff",
+      "activity"
+    ],
+    "keywords": null,
+    "error": "expected 3 keywords, got 2: ['police', 'detective']"
+  }
+}

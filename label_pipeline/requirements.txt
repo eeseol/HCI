@@ -1,0 +1,10 @@
+# label_pipeline dependencies (직접 의존성만 고정)
+# NLTK 데이터(punkt_tab, averaged_perceptron_tagger_eng, wordnet)는 step1 실행 시 ~/nltk_data 로 자동 다운로드
+nltk==3.10.4
+openpyxl==3.1.5
+pypdf==7.0.0
+scikit-learn==1.9.1
+
+# 선택(2단계 API provider 사용 시에만 설치):
+# anthropic   # --provider claude  (ANTHROPIC_API_KEY)
+# openai      # --provider openai  (OPENAI_API_KEY)

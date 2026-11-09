@@ -1,0 +1,51 @@
+규칙 기반 후보 추출(1단계)의 알려진 한계 — 품사(POS) 필터로 인한 주제어 누락/약화 사례
+========================================================================================
+작성: 2026-11-10  /  기준: step1_tfidf.py (NLTK averaged_perceptron_tagger_eng + WordNet lemmatizer,
+                         NN·NNS·JJ만 유지, TF-IDF 상위 20개)
+※ 아래 사례는 의도적으로 수정하지 않고 그대로 둔다 (발표 시 규칙 기반 방식의 한계로 제시).
+
+비교 기준: "POS 필터 전" = 1단계 최초 버전(불용어 제거 + 단순 복수형 규칙, 품사 필터 없음, 상위 15개)
+           "POS 필터 후" = 현재 확정 버전(상위 20개)
+
+
+[사례 1] doc 12 "Curious about Careers - Firefighters" — firefighting 완전 누락
+  - POS 필터 전: 8위 (firefighting, tfidf 0.117)
+  - POS 필터 후: 후보에 없음 (남은 토큰 0개)
+  - 원인: 본문 3회 모두 문장 첫머리 대문자 "Firefighting"으로 등장 → 태거가 NNP 1회, VBG(동명사) 2회로 태깅.
+          NNP는 고유명사로, VBG는 동사로 분류되어 전부 제외됨.
+      NNP | Firefighting is an important job to keep people safe and help keep fires from damaging too much property.
+      VBG | Firefighting is stressful, though.
+      VBG | Firefighting is not easy, but if you like helping people, it might be a good fit for you!
+  - 시사점: 동명사형 주제어(-ing 명사)는 품사 태거가 동사로 판단하면 구조적으로 걸러진다.
+            (같은 이유로 canoeing·migrating처럼 NN으로 태깅된 경우만 살아남는 등 태깅 결과에 따라 일관성이 없음)
+
+[사례 2] doc 30 "What Police and Detectives Do" — patrol 순위 하락 (6위 → 17위)
+  - POS 필터 전: 6위 (tfidf 0.179)
+  - POS 필터 후: 17위 (tfidf 0.103) — 후보 15개였다면 탈락, 20개로 늘려 겨우 포함
+  - 원인: 같은 단어가 명사/동사로 모두 쓰임. 8회 중 4회만 명사(NN 2, NNS 2)로 남음.
+      VBP | Most police officers patrol their jurisdictions and investigate suspicious activity.
+      VB  | ... with uniformed officers assigned to patrol a ...
+      VBP | Officers in large agencies often patrol with a partner.
+      NNP | Patrol assigned areas.   (글머리표 항목의 명령문 첫 단어 → 고유명사로 오태깅)
+  - 시사점: 명사·동사 겸용어(patrol, test, use, care 등)는 동사 용법만큼 빈도가 깎여 주제어여도 순위가 떨어진다.
+
+[사례 3] doc 30 "What Police and Detectives Do" — sheriff 순위 하락 (12위 → 19위)
+  - POS 필터 전: 12위 (tfidf 0.135)
+  - POS 필터 후: 19위 (tfidf 0.103) — 후보 15개였다면 탈락, 20개로 늘려 겨우 포함
+  - 원인: 6회 중 문장 첫머리 대문자 "Sheriffs" 2회가 NNP로 오태깅되어 제외 (NNS 4회만 남음).
+      NNP | Sheriffs' departments tend to be relatively small.
+      NNP | Sheriffs usually are elected by the public and do the same work as a local or county police chief.
+  - 시사점: 문장 첫머리 대문자 일반명사를 고유명사로 오인하는 태거 오류가 빈도를 깎는다.
+            (고유명사 사전 보정은 "코퍼스 어디서도 소문자로 안 쓰인 단어"만 제외하므로 sheriff 자체가
+             사전에 들어가지는 않았지만, 개별 토큰 단위의 NNP 태그 제외는 막지 못함)
+
+
+[참고] doc 21 "The Goose Voyage" — goose가 후보에 없음 (POS 필터와 무관)
+  - 본문에 "goose" 1회만 등장, "geese"는 없음 (주인공 기러기들은 이름 Shane·Lucy로만 지칭).
+  - 낮은 TF 때문이며 품사 필터·표제어 처리 문제가 아님. 제목 단어는 TF에 넣지 않는 설계(제목은 2단계 LLM 입력).
+
+
+요약
+  - 원인 유형: (a) 동명사 주제어의 VBG 태깅, (b) 명사·동사 겸용어의 동사 용법 제외, (c) 문장 첫머리 대문자의 NNP 오태깅
+  - 후보 수를 15→20으로 늘려 (b)(c)는 후보에는 남았으나 순위가 낮고, (a)는 후보 수와 무관하게 누락됨.
+  - 이 한계는 TF-IDF 후보 안에서만 고르는 2단계 LLM이 보완할 수 없다 (후보에 없는 단어는 선택 불가).

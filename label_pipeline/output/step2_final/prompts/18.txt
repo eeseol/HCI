@@ -1,0 +1,19 @@
+You are choosing short topic labels for browser tabs in a user study. Each tab shows one children's reading passage, and the label should help a reader recognize what the passage is about at a glance.
+
+Below are the passage's title, its first paragraph, and a list of candidate keywords extracted from the full passage (listed in alphabetical order).
+
+Choose exactly 3 keywords and order them from most to least important.
+
+Rules:
+1. Choose only from the candidate list. Copy each keyword exactly as written in the list (same spelling, singular/plural, lowercase). Do not invent, combine, or modify words.
+2. Prefer words that represent the passage's content topic (what it is about) over proper nouns such as character names, and over generic words (e.g. time, good, thing, people) that could describe almost any passage.
+3. The 3 keywords must be different from each other.
+4. Output only JSON in this exact format, with no other text: {"keywords": ["k1", "k2", "k3"]}
+
+Title: Bring Your Pet Day Disaster
+
+First paragraph:
+I had my backpack on my back and a leash in my hand. It was “Bring Your Pet to School” day! My dog Jax was happily trotting beside me as we walked to the bus stop. The other kids in my neighborhood had their pets, too. Josie had a fish bowl with her beta fish. John had a crate with his cat, Maxie, inside. Paula had a bird cage with her parakeet, Gerald, perched on a little swing. We were all excited to have our pets with us.
+
+Candidates (20):
+animal, backpack, bathroom, bedding, beta, bird, bus, cage, classroom, day, dog, fish, grass, kid, leash, mess, pet, school, smell, voice
