@@ -1,0 +1,61 @@
+﻿doc_id,title,column,cell,removed_description,matched_keywords,shared_lemmas
+1,An Honestly Fun Camp,description_5,K5,Speaking up to counselors about trouble with horseback riding.,counselor,counselor
+1,An Honestly Fun Camp,description_7,M5,Moving from the bow to the stern to steer the canoe.,canoeing,canoe
+2,Emma's Favorite Restaurant,description_2,H6,Dad suggests trying a new Lebanese place in town.,lebanese,lebanese
+2,Emma's Favorite Restaurant,description_5,K6,A friendly host and server help them choose dishes.,dish,dish
+3,First Day,description_3,I7,Teachers hold name signs to guide students into lines.,teacher,teacher
+3,First Day,description_6,L7,Gathering on the carpet to talk about classroom values.,classroom,classroom
+3,First Day,description_7,M7,Partners share ideas like respect and honesty.,respect,respect
+3,First Day,description_9,O7,"The class votes on respect, cooperation, and fairness.",respect,respect
+3,First Day,description_10,P7,A welcoming teacher eases back-to-school anxiety.,teacher,teacher
+4,Left Out,description_5,K8,Wanting to ignore the friend instead of confronting her.,friend,friend
+4,Left Out,description_9,O8,The friend knew she is afraid of snakes.,friend,friend
+4,Left Out,description_10,P8,A basketball game with her brother interrupted by hurt feelings.,basketball,basketball
+5,Open for Business,description_4,J9,An ice cream shop owner explains how a shop works.,shop,shop
+5,Open for Business,description_10,P9,Paying employees depends on attracting customers.,customer,customer
+6,Oranges Everywhere,description_1,G10,A boy wanders through citrus groves on his family's farm.,grove,grove
+6,Oranges Everywhere,description_7,M10,Factories send toys to other towns.,factory,factory
+7,Pool Fit for a Hedgehog,description_1,G11,Two spiny animals beat the summer heat.,summer,summer
+8,Mouse Madness,description_1,G12,A rodent sneaks through tunnels under a zoo.,zoo,zoo
+8,Mouse Madness,description_2,H12,Sniffing out nachos and cheese left under a bench.,cheese,cheese
+9,Treasure Hunt,description_1,G13,Kids spot an old book under a bush on the way to school.,book,book
+9,Treasure Hunt,description_2,H13,A collection of maps leading to hidden riches.,map,map
+9,Treasure Hunt,description_4,J13,A loose slip of paper shows a map of their own town.,map,map
+10,The Singing Plants,description_1,G14,A boy wakes to mysterious music before sunrise.,music,music
+11,Ballet,description_5,K15,Warming up muscles at the barre.,barre,barre
+12,Curious about Careers - Firefighters,description_6,L16,Staying at the station overnight and cleaning equipment.,equipment,equipment
+13,How to Skateboard,description_5,K17,Choosing a regular or goofy stance.,stance,stance
+13,How to Skateboard,description_10,P17,Mastering the basics slowly before attempting tricks.,trick,trick
+14,Survival in the Wild,description_1,G18,How plants and animals adapt to stay alive in nature.,animal,animal
+14,Survival in the Wild,description_2,H18,Camouflage helps deer blend into forests.,camouflage,camouflage
+14,Survival in the Wild,description_9,O18,"Sharp claws, teeth, and quills deter predators.",predator,predator
+15,After the Flood,description_1,G19,Living through a natural disaster caused by endless rain.,rain,rain
+15,After the Flood,description_7,M19,Closed roads and a bridge covered by a rushing river.,river,river
+16,Alex and Amanda's First Concert,description_1,G20,Fifth-grade twins beg to see a popular teen band live.,band,band
+16,Alex and Amanda's First Concert,description_5,K20,Mowing lawns and babysitting to pay for tickets.,ticket,ticket
+16,Alex and Amanda's First Concert,description_6,L20,An older sister agrees to chaperone if her friend's ticket is covered.,ticket,ticket
+16,Alex and Amanda's First Concert,description_7,M20,Singing along to the band's newest release in the car.,band,band
+17,Best Friend Blues,description_5,K21,Keeping a classmate's notebook out of anger.,notebook,notebook
+18,Bring Your Pet Day Disaster,description_1,G22,Students take animals to school for a special event.,school,school
+18,Bring Your Pet Day Disaster,description_10,P22,Grateful the school has no such tradition.,school,school
+19,Dinner Disaster,description_1,G23,A boy who complains about meatloaf is put in charge of meals.,meatloaf,meatloaf
+20,Fairy Followers,description_2,H24,"Drawing real places, people, and imaginary creatures.",drawing / creature,creature draw drawing
+21,The Goose Voyage,description_5,K25,Taking turns leading at the point of the flock.,flock,flock
+21,The Goose Voyage,description_9,O25,An eagle dives at a flockmate named Lucy.,eagle,eagle
+22,Jump Around,description_1,G26,Bouncing at a classmate's birthday party.,bounce / party,bounce party
+22,Jump Around,description_5,K26,A trampoline as a cheaper alternative.,trampoline,trampoline
+23,Mystery of the Broken Pie,description_8,N27,Searching the kitchen for evidence.,evidence,evidence
+24,The Best Vacation Ever,description_1,G28,A boy wants to snowboard over winter break.,snowboarding,snowboard
+24,The Best Vacation Ever,description_2,H28,Parents book a tropical cruise instead.,cruise,cruise
+25,Finders Keepers,description_1,G29,Three boys ride dirt bikes on an off-road trail.,trail,trail
+25,Finders Keepers,description_4,J29,A gold money clip holding five hundred dollars.,money,money
+25,Finders Keepers,description_8,N29,Turning the money in at the police station.,money,money
+26,Curious about Careers - Teacher,description_4,J30,Helping frustrated students calm down.,student,student
+26,Curious about Careers - Teacher,description_7,M30,"Grading tests and creating lessons, worksheets, and projects.",lesson,lesson
+26,Curious about Careers - Teacher,description_10,P30,Tracking test scores to help struggling students.,student,student
+27,Horses,description_1,G31,"Strong, fast, beautiful mammals with long legs.",mammal,mammal
+27,Horses,description_8,N31,Hooves need trimming and metal shoes.,hoof,hoof
+28,How to Care for a Pet Fish,description_4,J32,Buying a tank with a lid and a stand.,tank,tank
+29,How to Make Animations,description_1,G33,Behind the scenes of Saturday morning cartoons.,cartoon,cartoon
+29,How to Make Animations,description_5,K33,Twelve to twenty-four drawings per second.,drawing,drawing
+30,What Police and Detectives Do,description_2,H34,Investigators gather facts and evidence of crimes.,crime,crime

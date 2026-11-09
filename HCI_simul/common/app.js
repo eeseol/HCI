@@ -393,6 +393,7 @@ function proposedList(d) {
 function autoProposed(d) {
   const list = proposedList(d);
   if (V.source === 'cloud') return list[0] || null;
+  if (V.source === 'llm') return list.slice(0, 3).join(' · ') || null;   // text LLM: LLM_text_1 · LLM_text_2 · LLM_text_3
   const k = Math.max(1, state.cfg.proposedRank || 1);
   return list[k - 1] || list[list.length - 1] || null;     // 그 순위가 비어 있으면 마지막 순위
 }
@@ -959,7 +960,7 @@ function finishTrial(outcome, elapsedMs) {
     target_label: labelFor(target, cur.cond.method),
     cue: state.cfg.cueSource === 'thumb' ? '[thumbnail]' : cueFor(target, cur),
     cue_desc_no: state.cfg.cueSource === 'desc' ? cur.descNo : '',
-    proposed_source: V.source === 'cloud' ? 'text_cloud_top1' : `${SOURCE_COLS[V.source].col}_${state.cfg.proposedRank}`,
+    proposed_source: V.source === 'cloud' ? 'text_cloud_top1' : V.source === 'llm' ? 'LLM_text_1-3 (joined)' : `${SOURCE_COLS[V.source].col}_${state.cfg.proposedRank}`,
     start_tab_index: t.startTabIndex,
     click_sequence: t.clicks.join('>'),
     tab_switches: t.switches,
@@ -1303,7 +1304,7 @@ function renderMeta() {
   const withDesc = pool.filter((n) => (metaFor(state.docs.get(n)) || { desc: [] }).desc.length).length;
   el.innerHTML = `📊 <b>${esc(m.source)}</b> · ${m.rows.length}행 · 사용 아티클 ${pool.length}개 중 매칭 ` +
     `<b class="${matched === pool.length ? 'good' : 'bad'}">${matched}</b> · description 있음 ${withDesc}` +
-    (V.source !== 'cloud' ? ` · Proposed 열: <b>${SOURCE_COLS[V.source].col}_${state.cfg.proposedRank}</b>` : '');
+    (V.source !== 'cloud' ? ` · Proposed 열: <b>${V.source === 'llm' ? 'LLM_text_1-3 (joined)' : `${SOURCE_COLS[V.source].col}_${state.cfg.proposedRank}`}</b>` : '');
 }
 
 function renderFolder() {
