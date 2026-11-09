@@ -1,8 +1,8 @@
 """4단계: v2 엑셀 → v3 엑셀. 최종 키워드(LLM_text_1~3)와 표제어가 겹치는 description 셀을 비움.
 
-입력 : PDF/30_Articles_Topics_v2.xlsx (읽기만 함), output/step2_final/selections.json
+입력 : PDF/30_Articles_Topics_v2.xlsx (읽기만 함), output/selections/selections.json
 출력 : PDF/30_Articles_Topics_v3.xlsx
-       output/cue_filter_log.csv  (비운 셀 목록 + 겹친 표제어/키워드)
+       output/reports/cue_filter_log.csv  (비운 셀 목록 + 겹친 표제어/키워드)
 겹침 판정은 step3_build.py 의 cue_match 와 동일 (WordNet 표제어 n/v/a, 문장 단위).
 """
 import csv
@@ -11,14 +11,15 @@ import os
 
 from openpyxl import load_workbook
 
-from step3_build import OUT, ROOT, STEP2_DIR, cue_set, label_lemmas
+from paths import REPORTS, SELECTIONS, XLSX_V1, XLSX_V2, XLSX_V3
+from step3_build import cue_set, label_lemmas
 
-SRC_XLSX = os.path.join(ROOT, "PDF", "30_Articles_Topics_v2.xlsx")
-DST_XLSX = os.path.join(ROOT, "PDF", "30_Articles_Topics_v3.xlsx")
+SRC_XLSX = XLSX_V2
+DST_XLSX = XLSX_V3
 
 
 def main():
-    with open(os.path.join(STEP2_DIR, "selections.json"), encoding="utf-8") as f:
+    with open(os.path.join(SELECTIONS, "selections.json"), encoding="utf-8") as f:
         sel = json.load(f)
     wb = load_workbook(SRC_XLSX)
     ws = wb.active
@@ -50,9 +51,9 @@ def main():
                 kept[no] += 1
 
     assert os.path.abspath(DST_XLSX) not in (os.path.abspath(SRC_XLSX),
-                                            os.path.abspath(os.path.join(ROOT, "PDF", "30_Articles_Topics.xlsx")))
+                                            os.path.abspath(XLSX_V1))
     wb.save(DST_XLSX)
-    with open(os.path.join(OUT, "cue_filter_log.csv"), "w", newline="", encoding="utf-8-sig") as f:
+    with open(os.path.join(REPORTS, "cue_filter_log.csv"), "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["doc_id", "title", "column", "cell", "removed_description", "matched_keywords",
                     "shared_lemmas"])

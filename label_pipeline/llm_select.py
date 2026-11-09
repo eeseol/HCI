@@ -11,8 +11,7 @@ import json
 import os
 import re
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-PROMPT_PATH = os.path.join(HERE, "prompt.txt")
+from paths import PROMPT_PATH
 N_KEYWORDS = 3
 
 DEFAULT_MODELS = {

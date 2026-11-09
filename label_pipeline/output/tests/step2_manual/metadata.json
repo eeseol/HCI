@@ -2,7 +2,7 @@
   "provider": "manual",
   "model": "manual-test-fixture",
   "generation_note": "2단계 동작 확인용 테스트 픽스처 (최종 라벨 아님). 01/12/21은 정상 예시, 04/30은 검증 실패를 확인하기 위한 의도적 오류 예시.",
-  "generated_at": "2026-11-10T05:24:34+09:00",
+  "generated_at": "2026-11-10T05:45:42+09:00",
   "manual_file": "tests/manual_test.json",
   "manual_file_metadata": {
     "model": "manual-test-fixture",
@@ -12,7 +12,7 @@
   "prompt_file": "prompt.txt",
   "prompt_sha256": "da654af9d3251e7f1b96075b1351633d37be1e802dce2908bf7604f1a3cfad7b",
   "prompt_template": "You are choosing short topic labels for browser tabs in a user study. Each tab shows one children's reading passage, and the label should help a reader recognize what the passage is about at a glance.\n\nBelow are the passage's title, its first paragraph, and a list of candidate keywords extracted from the full passage (listed in alphabetical order).\n\nChoose exactly 3 keywords and order them from most to least important.\n\nRules:\n1. Choose only from the candidate list. Copy each keyword exactly as written in the list (same spelling, singular/plural, lowercase). Do not invent, combine, or modify words.\n2. Prefer words that represent the passage's content topic (what it is about) over proper nouns such as character names, and over generic words (e.g. time, good, thing, people) that could describe almost any passage.\n3. The 3 keywords must be different from each other.\n4. Output only JSON in this exact format, with no other text: {\"keywords\": [\"k1\", \"k2\", \"k3\"]}\n\nTitle: {title}\n\nFirst paragraph:\n{first_paragraph}\n\nCandidates ({n_candidates}):\n{candidates}\n",
-  "candidates_csv": "output/tfidf_candidates.csv",
+  "candidates_csv": "output/intermediate/tfidf_candidates.csv",
   "candidates_csv_sha256": "c28fc816a56fcc3163e436a149bb539cc5ac2992ff3c86d3663a11763a97d203",
   "candidate_order_in_prompt": "alphabetical",
   "candidate_order_reason": "순서 편향 방지: TF-IDF 순위 순으로 후보를 제시하면 LLM이 목록 앞쪽(고순위) 후보를 우선 고르는 위치 편향이 생길 수 있어, 순위 정보를 숨기고 알파벳 순으로 제시함. 후보 집합(TF-IDF 상위 20개) 자체는 동일.",

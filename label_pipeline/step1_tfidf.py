@@ -1,6 +1,6 @@
 """1단계: PDF 30개 → 전처리 → TF-IDF 상위 20개 후보 추출.
 
-출력 (label_pipeline/output/):
+출력 (label_pipeline/output/intermediate/, 경로는 paths.py):
   - clean_text/<doc_id>.txt   : 머리말/꼬리말/문제 제거 후 본문 (2단계 '첫 문단' 입력용)
   - tokens.json               : 문서별 전처리 토큰 (POS 필터+표제어, 단순 빈도 비교용)
   - tfidf_candidates.csv      : doc_id, title, rank, word, tfidf
@@ -24,11 +24,10 @@ from collections import Counter
 import nltk
 from nltk.stem import WordNetLemmatizer
 from pypdf import PdfReader
+
+from paths import CANDIDATES_CSV, CLEAN_DIR, PDF_DIR, STEP1_LOG, TOKENS_JSON
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, TfidfVectorizer
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PDF_DIR = os.path.join(ROOT, "PDF", "article")
-OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 DICT_PATH = "/usr/share/dict/words"
 TOP_K = 20
 MIN_LEN = 3
@@ -181,7 +180,7 @@ def filter_tokens(tagged, proper_nouns, lemmatizer, lemma_log):
 
 
 def main():
-    os.makedirs(os.path.join(OUT_DIR, "clean_text"), exist_ok=True)
+    os.makedirs(CLEAN_DIR, exist_ok=True)
     ensure_nltk_data()
     dictionary = load_dictionary()
     split_log = Counter()
@@ -198,7 +197,7 @@ def main():
         text = repair_splits(text, dictionary, split_log)
         text = re.sub(r"[ \t]+", " ", text)
         text = re.sub(r"\n\s*\n+", "\n", text).strip()
-        with open(os.path.join(OUT_DIR, "clean_text", f"{doc_id:02d}.txt"), "w", encoding="utf-8") as f:
+        with open(os.path.join(CLEAN_DIR, f"{doc_id:02d}.txt"), "w", encoding="utf-8") as f:
             f.write(text)
         docs.append({"doc_id": doc_id, "title": title, "text": text, "questions_cut": cut,
                      "title_removed": title_removed})
@@ -218,7 +217,7 @@ def main():
     X = vec.fit_transform([tokens[i] for i in ids])
     feats = vec.get_feature_names_out()
 
-    with open(os.path.join(OUT_DIR, "tfidf_candidates.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(CANDIDATES_CSV, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["doc_id", "title", "rank", "word", "tfidf"])
         for row, d in enumerate(docs):
@@ -228,10 +227,10 @@ def main():
             for rank, j in enumerate(order, 1):
                 w.writerow([d["doc_id"], d["title"], rank, feats[j], f"{r[j]:.4f}"])
 
-    with open(os.path.join(OUT_DIR, "tokens.json"), "w", encoding="utf-8") as f:
+    with open(TOKENS_JSON, "w", encoding="utf-8") as f:
         json.dump({str(i): tokens[i] for i in ids}, f, ensure_ascii=False)
 
-    with open(os.path.join(OUT_DIR, "step1_log.txt"), "w", encoding="utf-8") as f:
+    with open(STEP1_LOG, "w", encoding="utf-8") as f:
         f.write("\n".join(log_lines) + "\n\n")
         f.write(f"split-word repairs ({sum(split_log.values())}):\n")
         for k, v in split_log.most_common():

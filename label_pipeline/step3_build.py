@@ -1,16 +1,16 @@
 """3단계: 최종 키워드 → 30_Articles_Topics_v2.xlsx + 비교표/cue_match 지표.
 
 입력
-  - output/step2_final/selections.json, metadata.json  (2단계 manual 모드로 검증된 최종 키워드)
-  - output/tokens.json, output/tfidf_candidates.csv      (1단계: 단순 빈도 / TF-IDF Top3)
+  - output/selections/selections.json, metadata.json    (2단계 manual 모드로 검증된 최종 키워드)
+  - output/intermediate/tokens.json, tfidf_candidates.csv (1단계: 단순 빈도 / TF-IDF Top3)
   - PDF/30_Articles_Topics.xlsx                          (원본: 읽기만 함, 절대 덮어쓰지 않음)
 출력
   - PDF/30_Articles_Topics_v2.xlsx
       LLM_text_1~5 기존 값 → LLM_old_1~5 (새 열)로 이동, LLM_text_1~3 = 최종 키워드, LLM_text_4~5 = 비움
-  - output/comparison.csv        : 문서별 방법 비교 + cue_match
-  - output/cue_match_summary.csv : 방법별 평균 cue_match, 겹치는 문서 쌍 수(구분성)
-  - output/overlap_pairs.csv     : 방법별로 키워드가 겹치는 문서 쌍 목록
-  - output/step3_metadata.json
+  - output/reports/comparison.csv        : 문서별 방법 비교 + cue_match
+  - output/reports/cue_match_summary.csv : 방법별 평균 cue_match, 겹치는 문서 쌍 수(구분성)
+  - output/reports/overlap_pairs.csv     : 방법별로 키워드가 겹치는 문서 쌍 목록
+  - output/reports/step3_metadata.json
 
 cue_match 정의
   - description_1~10 문장을 토큰화·소문자화 → 각 토큰의 WordNet 표제어(명사·동사·형용사) 집합 = 그 문서의 단서 집합
@@ -35,12 +35,11 @@ from openpyxl.utils import get_column_letter
 from copy import copy
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-OUT = os.path.join(HERE, "output")
-SRC_XLSX = os.path.join(ROOT, "PDF", "30_Articles_Topics.xlsx")
-DST_XLSX = os.path.join(ROOT, "PDF", "30_Articles_Topics_v2.xlsx")
-STEP2_DIR = os.path.join(OUT, "step2_final")
+from paths import CANDIDATES_CSV, REPORTS, ROOT, SELECTIONS, TOKENS_JSON, XLSX_V1, XLSX_V2
+
+SRC_XLSX = XLSX_V1
+DST_XLSX = XLSX_V2
+STEP2_DIR = SELECTIONS
 
 METHODS = ["freq_top3", "tfidf_top3", "final", "old_llm_top3", "baseline_title"]
 lem = WordNetLemmatizer()
@@ -92,10 +91,10 @@ def main():
     bad = [k for k, v in sel.items() if not v.get("keywords")]
     assert not bad and len(sel) == 30, f"invalid/missing selections: {bad}"
 
-    with open(os.path.join(OUT, "tokens.json"), encoding="utf-8") as f:
+    with open(TOKENS_JSON, encoding="utf-8") as f:
         tokens = json.load(f)
     tfidf = {}
-    with open(os.path.join(OUT, "tfidf_candidates.csv"), encoding="utf-8") as f:
+    with open(CANDIDATES_CSV, encoding="utf-8") as f:
         for r in csv.DictReader(f):
             tfidf.setdefault(int(r["doc_id"]), []).append(r["word"])
 
@@ -141,7 +140,7 @@ def main():
                 overlaps[m].append((a, b, sorted(shared)))
 
     # ---------------- comparison.csv
-    with open(os.path.join(OUT, "comparison.csv"), "w", newline="", encoding="utf-8-sig") as f:
+    with open(os.path.join(REPORTS, "comparison.csv"), "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["doc_id", "title",
                     "freq_top3", "tfidf_top3", "final_keywords", "old_LLM_text_1", "old_LLM_text_2",
@@ -174,11 +173,11 @@ def main():
             "overlapping_pairs": len(overlaps[m]),
             "total_pairs": 435,
         })
-    with open(os.path.join(OUT, "cue_match_summary.csv"), "w", newline="", encoding="utf-8-sig") as f:
+    with open(os.path.join(REPORTS, "cue_match_summary.csv"), "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(summary[0]))
         w.writeheader()
         w.writerows(summary)
-    with open(os.path.join(OUT, "overlap_pairs.csv"), "w", newline="", encoding="utf-8-sig") as f:
+    with open(os.path.join(REPORTS, "overlap_pairs.csv"), "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["method", "doc_a", "doc_b", "shared_lemmas"])
         for m in METHODS:
@@ -221,7 +220,7 @@ def main():
         "baseline_title_definition": "Article Title의 내용어 (소문자, 불용어·3글자 미만 제외), 개수는 문서마다 다름",
         "summary": summary,
     }
-    with open(os.path.join(OUT, "step3_metadata.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(REPORTS, "step3_metadata.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
 
     for s in summary:

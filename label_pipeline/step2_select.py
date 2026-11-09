@@ -6,7 +6,8 @@
   ANTHROPIC_API_KEY=... .venv/bin/python label_pipeline/step2_select.py --provider claude
   OPENAI_API_KEY=...    .venv/bin/python label_pipeline/step2_select.py --provider openai --model <model>
 
-출력 (--out-dir, 기본 label_pipeline/output/step2_<provider>/):
+출력 (--out-dir, 기본 label_pipeline/output/tests/step2_<provider>/ — 최종 결과는 --out-dir로
+      label_pipeline/output/selections/ 를 지정):
   - selections.json  : doc별 {title, candidates, keywords, raw_output | error}
   - metadata.json    : provider, model, 생성 일시, 프롬프트 원문·해시, 입력 CSV 해시 등
   - prompts/NN.txt   : 문서별로 실제 LLM에 들어간(들어갈) 완성 프롬프트
@@ -24,10 +25,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from llm_select import (CANDIDATE_ORDER, CANDIDATE_ORDER_REASON, DEFAULT_MODELS, PROMPT_PATH, SelectionError, first_paragraph,  # noqa: E402
                         load_prompt_template, select_keywords)
+from paths import CANDIDATES_CSV, CLEAN_DIR, TESTS_OUT  # noqa: E402
 
-OUT = os.path.join(HERE, "output")
-CANDIDATES_CSV = os.path.join(OUT, "tfidf_candidates.csv")
-CLEAN_DIR = os.path.join(OUT, "clean_text")
 
 
 def sha256(path):
@@ -55,7 +54,7 @@ def main():
     ap.add_argument("--note", default=None, help="메타데이터에 남길 생성 방식 설명")
     args = ap.parse_args()
 
-    out_dir = args.out_dir or os.path.join(OUT, f"step2_{args.provider}")
+    out_dir = args.out_dir or os.path.join(TESTS_OUT, f"step2_{args.provider}")
     os.makedirs(os.path.join(out_dir, "prompts"), exist_ok=True)
     template = load_prompt_template()
     docs = load_candidates()
